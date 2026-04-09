@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <meta name="description" content="Estratégia digital completa para Mondez Móveis: SEO, Mercado Livre, catálogo e atendimento IA.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="description" content="Estratégia digital completa para Mondez Móveis: SEO, Mercado Livre, Google Shopping, Marketing de Conteúdo e muito mais.">
   <meta name="theme-color" content="#1E1D1B">
   <title>Estratégia Mondez Móveis • Expansão Digital 2026</title>
   
@@ -12,8 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
   <style>
+    /* Reset & Base */
     * {
       margin: 0;
       padding: 0;
@@ -29,26 +29,26 @@
     }
 
     .diagram-container {
-      max-width: 1300px;
+      max-width: 1400px;
       margin: 0 auto;
     }
 
-    /* TIPOGRAFIA */
-    h1, h2, h3, h4 {
+    /* Tipografia */
+    h1, h2, h3, h4, .section-title {
       font-family: 'Outfit', sans-serif;
       font-weight: 600;
       letter-spacing: -0.02em;
     }
 
     h1 {
-      font-size: 2.6rem;
+      font-size: clamp(2.2rem, 7vw, 3.5rem);
       line-height: 1.1;
       margin-bottom: 8px;
     }
 
     h2 {
-      font-size: 1.7rem;
-      margin-bottom: 16px;
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      margin-bottom: 20px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -73,7 +73,7 @@
       padding-left: 20px;
     }
 
-    /* GRID PRINCIPAL */
+    /* Grid Principal */
     .strategy-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -117,7 +117,7 @@
     }
 
     .card-header h3 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 600;
     }
 
@@ -259,7 +259,7 @@
       margin-right: 8px;
     }
 
-    /* SETAS E CONECTORES VISUAIS */
+    /* Seções Especiais */
     .roadmap-step {
       display: flex;
       align-items: center;
@@ -277,41 +277,7 @@
       gap: 8px;
     }
 
-    /* RESPONSIVO */
-    @media (max-width: 900px) {
-      .strategy-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      .double-col, .full-col {
-        grid-column: span 1;
-      }
-      h1 {
-        font-size: 2.2rem;
-      }
-      body {
-        padding: 12px 10px 30px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .card {
-        padding: 20px 16px;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      .card-header i {
-        width: 46px;
-        height: 46px;
-        font-size: 1.6rem;
-      }
-      .metric-value {
-        font-size: 2rem;
-      }
-    }
-
-    /* TABELAS */
+    /* Tabelas */
     .fee-table {
       width: 100%;
       border-collapse: collapse;
@@ -329,21 +295,52 @@
       color: #1E1D1B;
     }
 
-    /* ILUSTRAÇÕES (imagens placeholder via unsplash/placekitten) */
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .strategy-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .double-col, .full-col {
+        grid-column: span 1;
+      }
+      body {
+        padding: 12px 10px 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px 16px;
+      }
+      .card-header i {
+        width: 46px;
+        height: 46px;
+        font-size: 1.6rem;
+      }
+      .metric-value {
+        font-size: 2rem;
+      }
+    }
+
+    /* Animações */
+    .fade-in {
+      animation: fadeIn 0.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Ilustrações */
     .img-fluid {
       max-width: 100%;
       border-radius: 20px;
     }
-
-    .separator-arrow {
-      display: flex;
-      justify-content: center;
-      margin: 5px 0;
-    }
   </style>
 </head>
 <body>
-<div class="diagram-container">
+<div class="diagram-container fade-in">
   
   <!-- CABEÇALHO ESTRATÉGICO -->
   <div class="strategy-header">
@@ -359,7 +356,7 @@
   <!-- GRID DE ESTRATÉGIA - VISÃO GERAL -->
   <div class="strategy-grid">
 
-    <!-- CARD 1: PÚBLICO & CURVAS -->
+    <!-- CARD 1: PÚBLICO & CURVAS (ATUALIZADO) -->
     <div class="card">
       <div class="card-header">
         <i class="fas fa-users-between-lines"></i>
@@ -373,7 +370,7 @@
         <ul class="bullet-list">
           <li><i class="fas fa-gem"></i> <strong>Público A (Premium):</strong> Classe A, 35-60 anos, design autoral. Ticket > R$8k.</li>
           <li><i class="fas fa-home"></i> <strong>Público B (Aspiracional):</strong> Classe B+, 28-50 anos, compra parcelado, valoriza tendências.</li>
-          <li><i class="fas fa-building"></i> <strong>Público C (Corporativo):</strong> Arquitetos/empresas, compram volume e qualidade.</li>
+          <li><i class="fas fa-users"></i> <strong>Público C (Ticket Menor + Corporativo):</strong> Consumidores de ticket mais baixo (pessoa física) e empresas. Buscam custo-benefício, funcionalidade e design acessível.</li>
         </ul>
         <div class="highlight">
           <i class="fas fa-chart-line"></i> <strong>Curva de produtos A/B/C:</strong> Itens A (alto giro, ticket menor) → Mercado Livre / catálogo. Itens B e C (maior margem) → Venda consultiva WhatsApp + showroom.
@@ -385,11 +382,11 @@
       </div>
     </div>
 
-    <!-- CARD 2: CANAIS & ANÚNCIOS (FB ADS + CATÁLOGO) -->
+    <!-- CARD 2: CANAIS & ANÚNCIOS (FB/IG ADS) -->
     <div class="card">
       <div class="card-header">
         <i class="fab fa-facebook-f"></i>
-        <h3>Facebook Ads & Catálogo</h3>
+        <h3>Meta Ads (Facebook/Instagram)</h3>
       </div>
       <div class="card-content">
         <div class="image-wrapper">
@@ -588,82 +585,152 @@
     </div>
   </div><!-- FIM GRID -->
 
-  <!-- SEÇÃO DETALHADA: PASSO A PASSO PIXEL + MERCADO LIVRE + SEO -->
+  <!-- SEÇÃO DETALHADA: PIXEL DO FACEBOOK (PARA QUE SERVE) + GOOGLE SHOPPING -->
   <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 30px;">
-    <!-- PASSO A PASSO FACEBOOK PIXEL -->
+    <!-- PIXEL DO FACEBOOK -->
     <div style="flex: 2; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02); border: 1px solid #EBE7E2;">
       <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
         <i class="fab fa-meta" style="font-size: 2.4rem; color: #A77B55;"></i>
-        <h3 style="margin-bottom: 0;">Instalação do Meta Pixel (Passo a Passo)</h3>
+        <h3 style="margin-bottom: 0;">Meta Pixel: O que é e para que serve</h3>
       </div>
       <div class="image-wrapper" style="margin-bottom: 16px;">
-        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Configuração pixel Facebook" loading="lazy">
+        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pixel do Facebook" loading="lazy">
       </div>
-      <ol style="margin-left: 20px; margin-bottom: 20px; list-style-type: decimal; color: #2c2b28;">
-        <li style="margin-bottom: 8px;"><strong>Criar Pixel:</strong> No Gerenciador de Eventos do Meta, clique em “Conectar fontes de dados” → “Web” → “Pixel do Meta”. Nomeie como "Mondez Pixel".</li>
-        <li style="margin-bottom: 8px;"><strong>Instalar no site:</strong> Copie o código base e cole entre as tags <head> de todas as páginas. Se usar WordPress, use plugin "Meta Pixel".</li>
-        <li style="margin-bottom: 8px;"><strong>Configurar eventos:</strong> Adicione eventos padrão como "ViewContent" (quando visualizar produto), "AddToCart" e "Purchase". Use a ferramenta "Configurações de Eventos" do Pixel.</li>
-        <li style="margin-bottom: 8px;"><strong>Verificar com Pixel Helper:</strong> Instale a extensão do Chrome e verifique se o pixel está disparando corretamente.</li>
-        <li style="margin-bottom: 8px;"><strong>Integrar API de Conversões:</strong> Para maior precisão, configure a API de Conversões (via Gerenciador de Eventos). Isso melhora a atribuição.</li>
-      </ol>
+      <p style="margin-bottom: 16px;">O Pixel da Meta é um código que conecta seu site ao Facebook/Instagram, permitindo rastrear as ações dos visitantes e otimizar campanhas.</p>
+      <ul class="bullet-list">
+        <li><i class="fas fa-crosshairs"></i> <strong>Remarketing:</strong> Impactar quem já visitou seu site com anúncios personalizados.</li>
+        <li><i class="fas fa-users-cog"></i> <strong>Públicos Semelhantes:</strong> Alcançar novas pessoas com perfil similar aos seus melhores clientes.</li>
+        <li><i class="fas fa-chart-bar"></i> <strong>Medição de Conversões:</strong> Saber exatamente quantas vendas/leads vieram dos anúncios.</li>
+        <li><i class="fas fa-cart-shopping"></i> <strong>Otimização de Campanhas:</strong> O algoritmo da Meta usa os dados para exibir anúncios para quem tem maior probabilidade de comprar.</li>
+      </ul>
       <div class="highlight">
-        <i class="fas fa-lightbulb"></i> <strong>Dica:</strong> Crie públicos personalizados com base em quem visitou páginas de produtos específicos para remarketing.
+        <i class="fas fa-lightbulb"></i> <strong>Importante:</strong> O pixel coleta eventos como "ViewContent" (visualização de produto) e "Purchase" (compra), essenciais para medir o ROI e criar públicos personalizados.
       </div>
-      <span class="tag">Guia atualizado 2026</span>
-      <span class="tag">Eventos padrão</span>
+      <span class="tag">Meta Business Suite</span>
+      <span class="tag">Eventos Padrão</span>
+      <span class="tag">API de Conversões</span>
     </div>
 
-    <!-- PASSO A PASSO MERCADO LIVRE -->
+    <!-- GOOGLE SHOPPING -->
     <div style="flex: 3; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02); border: 1px solid #EBE7E2;">
       <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
-        <i class="fas fa-cart-shopping" style="font-size: 2.4rem; color: #A77B55;"></i>
-        <h3 style="margin-bottom: 0;">Como criar sua loja no Mercado Livre</h3>
+        <i class="fab fa-google" style="font-size: 2.4rem; color: #A77B55;"></i>
+        <h3 style="margin-bottom: 0;">Google Shopping: Anuncie seus produtos no Google</h3>
       </div>
-      <ol style="margin-left: 20px; list-style-type: decimal;">
-        <li style="margin-bottom: 8px;"><strong>Cadastro:</strong> Acesse "Vender" no Mercado Livre. Preencha dados da empresa (CNPJ) e conta bancária.</li>
-        <li style="margin-bottom: 8px;"><strong>Configurar reputação:</strong> Comece vendendo produtos de ticket menor para ganhar as primeiras avaliações positivas.</li>
-        <li style="margin-bottom: 8px;"><strong>Anúncios:</strong> Escolha entre Clássico (11,5%) ou Premium (16,5%). Para móveis de alto padrão, o Premium oferece parcelamento e mais visibilidade.</li>
-        <li style="margin-bottom: 8px;"><strong>Logística:</strong> Ative o Mercado Envios e considere o Full para armazenar produtos nos centros de distribuição do ML.</li>
-        <li style="margin-bottom: 8px;"><strong>Estratégia de preço:</strong> Simule com a calculadora de taxas (disponível no site do Mercado Livre) para garantir margem.</li>
-      </ol>
-      <table class="fee-table">
-        <tr><th>Produto</th><th>Preço</th><th>Comissão (Premium)</th><th>Lucro Bruto Estimado</th></tr>
-        <tr><td>Cadeira design</td><td>R$ 450</td><td>~R$ 74,25</td><td>~R$ 375</td></tr>
-        <tr><td>Mesa de centro</td><td>R$ 890</td><td>~R$ 146,85</td><td>~R$ 743</td></tr>
-        <tr><td>Sofá premium</td><td>R$ 2.400</td><td>~R$ 396</td><td>~R$ 2.004</td></tr>
-      </table>
-      <div class="highlight" style="margin-top: 16px;">
-        <i class="fas fa-chart-bar"></i> <strong>Meta 2026:</strong> 15% de conversão no Mercado Livre, reputação 4.8★, presença nacional.
+      <div class="image-wrapper" style="margin-bottom: 16px;">
+        <img src="https://images.pexels.com/photos/1280638/pexels-photo-1280638.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Google Shopping" loading="lazy">
       </div>
+      <p style="margin-bottom: 12px;">O Google Shopping exibe seus produtos diretamente nos resultados de busca, com imagem, preço e avaliação, capturando clientes com alta intenção de compra.</p>
+      <ul class="bullet-list">
+        <li><i class="fas fa-tag"></i> <strong>Feed de Produtos:</strong> Envie informações completas (título, descrição, preço, disponibilidade) para o Google Merchant Center.</li>
+        <li><i class="fas fa-arrow-trend-up"></i> <strong>Campanhas Performance Max:</strong> Utilize a IA do Google para exibir seus produtos em múltiplos canais (Shopping, YouTube, Gmail).</li>
+        <li><i class="fas fa-mobile-alt"></i> <strong>Mobile First:</strong> Otimize imagens e títulos para telas pequenas, onde a maioria das buscas acontece.</li>
+        <li><i class="fas fa-chart-line"></i> <strong>ROI Positivo:</strong> Campanhas bem estruturadas costumam ter um retorno sobre investimento (ROAS) superior a 400%.</li>
+      </ul>
+      <div class="highlight">
+        <i class="fas fa-calculator"></i> <strong>Dado:</strong> O Google Shopping representa até 85% do investimento em anúncios de varejo, com CPC médio de R$ 0,98 para a categoria móveis (2026).
+      </div>
+      <button class="btn-dummy"><i class="fas fa-store"></i> Exemplo: Integrar feed de produtos automaticamente via Shopify/Nuvemshop</button>
     </div>
   </div>
 
-  <!-- SEÇÃO: SEO PASSO A PASSO + GOOGLE MEU NEGÓCIO -->
+  <!-- SEÇÃO: MARKETING DE CONTEÚDO + VENDA CONSULTIVA -->
   <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 30px;">
+    <!-- MARKETING DE CONTEÚDO -->
     <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
-      <h3 style="display: flex; gap: 10px;"><i class="fab fa-google" style="color:#A77B55;"></i> SEO para Mondez Móveis</h3>
-      <ul class="bullet-list">
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Palavras-chave:</strong> "móveis alto padrão", "sofá design RS", "mesa de jantar premium".</li>
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Otimização On-Page:</strong> Title, meta description, headings com palavras-chave.</li>
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Conteúdo:</strong> blog semanal com projetos, tendências e dicas.</li>
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Link Building:</strong> guest posts em sites de arquitetura e parcerias com influenciadores.</li>
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Google Meu Negócio:</strong> atualizações diárias, responder perguntas, fotos.</li>
-      </ul>
-      <div class="image-wrapper" style="margin-top: 12px;">
-        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Otimização Google Meu Negócio" loading="lazy">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+        <i class="fas fa-newspaper" style="font-size: 2.4rem; color: #A77B55;"></i>
+        <h3 style="margin-bottom: 0;">Marketing de Conteúdo: Blog e SEO</h3>
       </div>
-    </div>
-    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
-      <h3 style="display: flex; gap: 10px;"><i class="fas fa-robot"></i> Agente IA + WhatsApp</h3>
+      <div class="image-wrapper" style="margin-bottom: 16px;">
+        <img src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog de conteúdo" loading="lazy">
+      </div>
+      <p><strong>Atrair clientes com conteúdo de valor</strong></p>
       <ul class="bullet-list">
-        <li><i class="fas fa-comment"></i> Integração com ManyChat, Kommo ou Zenvia.</li>
-        <li><i class="fas fa-clock"></i> Atendimento 24/7 com respostas automáticas para dúvidas frequentes.</li>
-        <li><i class="fas fa-user-plus"></i> Coleta de leads e agendamento de visitas.</li>
-        <li><i class="fas fa-arrow-right"></i> Transbordo para vendedor humano em negociações complexas.</li>
+        <li><i class="fas fa-pen-fancy"></i> <strong>Blog no site:</strong> Publique guias de decoração, tendências (curvas orgânicas, tons terrosos), cuidados com móveis e cases de projetos.</li>
+        <li><i class="fas fa-search"></i> <strong>SEO para blog:</strong> Foco em palavras-chave de cauda longa como "como escolher sofá de alto padrão" e "tendências de design 2026".</li>
+        <li><i class="fas fa-hashtag"></i> <strong>Redes Sociais:</strong> Transforme os artigos em carrosséis para Instagram e vídeos curtos para Reels/TikTok.</li>
+        <li><i class="fas fa-envelope"></i> <strong>Newsletter:</strong> Envie conteúdo exclusivo para sua base de clientes e leads.</li>
       </ul>
       <div class="highlight">
-        <i class="fas fa-percent"></i> Empresas que adotam IA no atendimento aumentam em até 30% a taxa de conversão.
+        <i class="fas fa-chart-pie"></i> Empresas que mantêm blog ativo geram 67% mais leads por mês do que as que não possuem (HubSpot 2026).
       </div>
+      <span class="tag">Blog Mondez</span>
+      <span class="tag">Calendário Editorial</span>
+    </div>
+
+    <!-- VENDA CONSULTIVA -->
+    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+        <i class="fas fa-hand-holding-heart" style="font-size: 2.4rem; color: #A77B55;"></i>
+        <h3 style="margin-bottom: 0;">Venda Consultiva: Soluções Completas</h3>
+      </div>
+      <div class="image-wrapper" style="margin-bottom: 16px;">
+        <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Venda consultiva" loading="lazy">
+      </div>
+      <p><strong>Posicione a Mondez como consultora de estilo de vida</strong></p>
+      <ul class="bullet-list">
+        <li><i class="fas fa-couch"></i> <strong>Venda soluções completas:</strong> Ofereça combos de sofá + mesa de centro + poltrona, criando projetos harmonizados.</li>
+        <li><i class="fas fa-paint-brush"></i> <strong>Curadoria personalizada:</strong> Designers da Mondez ajudam o cliente a escolher as peças ideais para seu espaço e estilo.</li>
+        <li><i class="fas fa-ruler-combined"></i> <strong>Projetos 3D:</strong> Envie renderizações dos móveis no ambiente do cliente para aumentar a confiança na compra.</li>
+        <li><i class="fas fa-tags"></i> <strong>Pacotes para arquitetos:</strong> Condições especiais para profissionais que especificarem Mondez em seus projetos.</li>
+      </ul>
+      <div class="highlight">
+        <i class="fas fa-dollar-sign"></i> A venda consultiva aumenta o ticket médio em até 40% e reduz a taxa de devolução, pois o cliente compra com mais segurança.
+      </div>
+      <span class="tag">Projetos 3D</span>
+      <span class="tag">Consultoria Online</span>
+    </div>
+  </div>
+
+  <!-- PROGRAMA DE FIDELIDADE + POSICIONAMENTO MERCADO LIVRE -->
+  <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 30px;">
+    <!-- PROGRAMA DE FIDELIDADE -->
+    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+        <i class="fas fa-crown" style="font-size: 2.4rem; color: #A77B55;"></i>
+        <h3 style="margin-bottom: 0;">Programa de Fidelidade para Profissionais</h3>
+      </div>
+      <div class="image-wrapper" style="margin-bottom: 16px;">
+        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Programa de fidelidade" loading="lazy">
+      </div>
+      <p><strong>Fidelize arquitetos, designers e lojistas</strong></p>
+      <ul class="bullet-list">
+        <li><i class="fas fa-gem"></i> <strong>Clube de Benefícios:</strong> Descontos progressivos, acesso antecipado a lançamentos e frete grátis para compras recorrentes.</li>
+        <li><i class="fas fa-graduation-cap"></i> <strong>Capacitação:</strong> Workshops online sobre tendências de design e uso dos produtos Mondez.</li>
+        <li><i class="fas fa-gift"></i> <strong>Recompensas:</strong> Acumule pontos a cada projeto que especificar Mondez e troque por produtos ou viagens.</li>
+        <li><i class="fas fa-star"></i> <strong>Selo "Parceiro Mondez":</strong> Destaque os profissionais em seu site e redes sociais.</li>
+      </ul>
+      <div class="highlight">
+        <i class="fas fa-users"></i> Programas de fidelidade B2B aumentam a recorrência de compra em até 30% e fortalecem o relacionamento com especificadores.
+      </div>
+      <span class="tag">Arquitetos</span>
+      <span class="tag">Designers</span>
+      <span class="tag">Lojistas</span>
+    </div>
+
+    <!-- POSICIONAMENTO MERCADO LIVRE -->
+    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+        <i class="fas fa-medal" style="font-size: 2.4rem; color: #A77B55;"></i>
+        <h3 style="margin-bottom: 0;">Como se Destacar no Mercado Livre</h3>
+      </div>
+      <div class="image-wrapper" style="margin-bottom: 16px;">
+        <img src="https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Posicionamento Mercado Livre" loading="lazy">
+      </div>
+      <p><strong>Estratégias para reputação e vendas</strong></p>
+      <ul class="bullet-list">
+        <li><i class="fas fa-star"></i> <strong>Reputação verde:</strong> Envie rápido, responda dúvidas em até 1 hora e evite cancelamentos.</li>
+        <li><i class="fas fa-image"></i> <strong>Fotos profissionais:</strong> Invista em imagens de alta qualidade, com fundo neutro e diferentes ângulos.</li>
+        <li><i class="fas fa-tags"></i> <strong>Preço competitivo + frete grátis:</strong> Ofereça frete grátis (Mercado Envios) para produtos acima de R$79.</li>
+        <li><i class="fas fa-chart-line"></i> <strong>Anúncios Premium:</strong> Para itens de maior margem, utilize anúncios Premium para parcelamento e destaque.</li>
+        <li><i class="fas fa-bullhorn"></i> <strong>Campanhas de Produto Patrocinado:</strong> Invista em publicidade dentro da plataforma para aparecer nas primeiras posições.</li>
+      </ul>
+      <div class="highlight">
+        <i class="fas fa-trophy"></i> Vendedores com reputação verde têm taxa de conversão até 2,5x maior do que os de reputação amarela ou vermelha.
+      </div>
+      <span class="tag">Mercado Envios</span>
+      <span class="tag">Full</span>
     </div>
   </div>
 
@@ -686,7 +753,7 @@
   </div>
 
   <div class="footer-note">
-    <i class="far fa-copy"></i> Estratégia desenvolvida para Mondez Móveis • Dados atualizados 2026 (IEMI, Mercado Livre, Meta) • Atendimento humanizado + inovação.
+    <i class="far fa-copy"></i> Estratégia desenvolvida para Mondez Móveis • Dados atualizados 2026 (IEMI, Mercado Livre, Meta, Google) • Atendimento humanizado + inovação.
   </div>
 </div>
 </body>
