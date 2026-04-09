@@ -2,11 +2,17 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="description" content="Estratégia digital completa para Mondez Móveis: SEO, Mercado Livre, catálogo e atendimento IA.">
+  <meta name="theme-color" content="#1E1D1B">
   <title>Estratégia Mondez Móveis • Expansão Digital 2026</title>
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  
+  <!-- Fontes & Ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <style>
     * {
       margin: 0;
@@ -16,162 +22,172 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #f5f3f0;
-      color: #2c2b28;
+      background: #F9F7F5;
+      color: #1E1D1B;
       line-height: 1.5;
-      padding: 32px 24px;
+      padding: 20px 16px 40px;
     }
 
     .diagram-container {
-      max-width: 1400px;
+      max-width: 1300px;
       margin: 0 auto;
     }
 
-    /* header */
-    .strategy-header {
-      margin-bottom: 40px;
-    }
-
-    .strategy-header h1 {
-      font-size: 3rem;
+    /* TIPOGRAFIA */
+    h1, h2, h3, h4 {
+      font-family: 'Outfit', sans-serif;
       font-weight: 600;
       letter-spacing: -0.02em;
-      color: #1e1d1b;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 16px;
       display: flex;
       align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .badge {
-      background: #d4a373;
+      background: #C59A6B;
       color: white;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      padding: 4px 16px;
+      padding: 6px 18px;
       border-radius: 40px;
       letter-spacing: 0.3px;
+      display: inline-block;
     }
 
     .subtitle {
       font-size: 1.2rem;
-      color: #5e5b56;
-      margin-top: 8px;
-      border-left: 5px solid #d4a373;
+      color: #5E5B56;
+      margin-bottom: 30px;
+      border-left: 5px solid #C59A6B;
       padding-left: 20px;
     }
 
-    /* diagram grid */
+    /* GRID PRINCIPAL */
     .strategy-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-bottom: 32px;
+      gap: 22px;
+      margin-bottom: 30px;
     }
 
     .card {
-      background: #ffffffd9;
-      backdrop-filter: blur(4px);
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 32px;
-      padding: 24px 22px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 0, 0, 0.02);
-      border: 1px solid #edeae5;
-      transition: transform 0.2s, box-shadow 0.3s;
+      background: #FFFFFF;
+      border-radius: 36px;
+      padding: 26px 24px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.02);
+      border: 1px solid #EBE7E2;
+      transition: transform 0.25s ease, box-shadow 0.3s;
+      backdrop-filter: blur(2px);
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 24px 40px rgba(0, 0, 0, 0.08);
-      border-color: #d4a37360;
+      box-shadow: 0 24px 40px rgba(0, 0, 0, 0.06);
+      border-color: #D1BBA3;
     }
 
     .card-header {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 16px;
       margin-bottom: 22px;
     }
 
     .card-header i {
-      font-size: 2.2rem;
-      color: #b07d4b;
-      background: #f0e5d9;
-      width: 52px;
-      height: 52px;
+      font-size: 2rem;
+      color: #A77B55;
+      background: #F0E9E2;
+      width: 54px;
+      height: 54px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 18px;
+      border-radius: 20px;
     }
 
-    .card-header h2 {
-      font-size: 1.5rem;
+    .card-header h3 {
+      font-size: 1.6rem;
       font-weight: 600;
-      color: #2c2b28;
     }
 
     .card-content {
-      color: #3f3e3b;
+      color: #3A3732;
     }
 
     .highlight {
-      background: #f9f6f2;
-      padding: 12px 16px;
-      border-radius: 20px;
-      margin: 16px 0;
-      border-left: 4px solid #d4a373;
+      background: #F5F0EB;
+      padding: 18px 18px;
+      border-radius: 22px;
+      margin: 20px 0 12px;
+      border-left: 4px solid #C59A6B;
+      font-size: 0.95rem;
     }
 
     .bullet-list {
       list-style: none;
-      margin-top: 8px;
+      margin: 12px 0;
     }
 
     .bullet-list li {
-      padding: 6px 0;
+      padding: 8px 0;
       display: flex;
       align-items: baseline;
-      gap: 10px;
+      gap: 12px;
+      border-bottom: 1px dashed #E6DFD9;
+    }
+
+    .bullet-list li:last-child {
+      border-bottom: none;
     }
 
     .bullet-list i {
-      color: #d4a373;
-      font-size: 0.9rem;
-      width: 18px;
-      margin-top: 4px;
+      color: #A77B55;
+      font-size: 1rem;
+      width: 22px;
+      text-align: center;
+      margin-top: 3px;
+    }
+
+    .tag-group {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }
 
     .tag {
-      background: #e7dfd7;
-      padding: 4px 12px;
+      background: #EAE3DC;
+      padding: 6px 16px;
       border-radius: 40px;
       font-size: 0.8rem;
       font-weight: 600;
-      color: #3a3530;
-      display: inline-block;
-      margin-right: 8px;
-      margin-bottom: 6px;
+      color: #2C2822;
     }
 
-    .btn-dummy {
-      background: #1e1d1b;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 0.9rem;
+    .image-wrapper {
+      margin: 20px 0 10px;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid #E7E0DA;
+    }
+
+    .image-wrapper img {
       width: 100%;
-      margin-top: 18px;
-      cursor: default;
-      text-align: center;
-      transition: background 0.2s;
-      border: 1px solid #2c2b28;
-    }
-
-    .btn-dummy i {
-      margin-right: 8px;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 16/9;
     }
 
     .double-col {
@@ -184,287 +200,493 @@
 
     .metric-row {
       display: flex;
-      gap: 16px;
+      gap: 18px;
       flex-wrap: wrap;
     }
 
     .metric-card {
-      background: white;
+      background: #FAF8F6;
       border-radius: 24px;
-      padding: 16px 20px;
-      flex: 1 1 180px;
-      border: 1px solid #e2ddd7;
+      padding: 20px 18px;
+      flex: 1 1 160px;
+      border: 1px solid #E3DDD7;
     }
 
     .metric-value {
-      font-size: 2.2rem;
+      font-size: 2.6rem;
       font-weight: 700;
-      color: #1e1d1b;
+      color: #1E1D1B;
+      line-height: 1;
+    }
+
+    .arrow-icon {
+      color: #C59A6B;
+      font-size: 1.8rem;
+      margin: 0 5px;
     }
 
     hr {
-      margin: 28px 0 18px;
+      margin: 30px 0 20px;
       border: 0;
       height: 1px;
-      background: linear-gradient(to right, transparent, #ccc5bd, transparent);
+      background: linear-gradient(to right, transparent, #D1C7BE, transparent);
     }
 
     .footer-note {
       text-align: center;
-      color: #6b6762;
+      color: #78736C;
       margin-top: 40px;
       font-size: 0.9rem;
     }
 
+    .btn-dummy {
+      background: #1E1D1B;
+      color: white;
+      border: none;
+      padding: 14px 18px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      width: 100%;
+      margin-top: 18px;
+      text-align: center;
+      cursor: default;
+      border: 1px solid #3A3732;
+      transition: background 0.2s;
+    }
+
+    .btn-dummy i {
+      margin-right: 8px;
+    }
+
+    /* SETAS E CONECTORES VISUAIS */
+    .roadmap-step {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 0;
+    }
+
+    .step-box {
+      background: #F0E9E2;
+      padding: 10px 16px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* RESPONSIVO */
     @media (max-width: 900px) {
       .strategy-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
       }
       .double-col, .full-col {
         grid-column: span 1;
       }
+      h1 {
+        font-size: 2.2rem;
+      }
+      body {
+        padding: 12px 10px 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px 16px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .card-header i {
+        width: 46px;
+        height: 46px;
+        font-size: 1.6rem;
+      }
+      .metric-value {
+        font-size: 2rem;
+      }
+    }
+
+    /* TABELAS */
+    .fee-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .fee-table td, .fee-table th {
+      padding: 10px 6px;
+      border-bottom: 1px solid #E0D8D1;
+      text-align: left;
+    }
+
+    .fee-table th {
+      font-weight: 600;
+      color: #1E1D1B;
+    }
+
+    /* ILUSTRAÇÕES (imagens placeholder via unsplash/placekitten) */
+    .img-fluid {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+
+    .separator-arrow {
+      display: flex;
+      justify-content: center;
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
 <div class="diagram-container">
+  
+  <!-- CABEÇALHO ESTRATÉGICO -->
   <div class="strategy-header">
     <h1>
-      ESTRATÉGIA MONDEZ MÓVEIS
-      <span class="badge">EXPANSÃO 2026</span>
+      MONDEZ MÓVEIS • 2026
+      <span class="badge">EXPANSÃO NACIONAL</span>
     </h1>
-    <div class="subtitle">Do showroom físico à presença nacional • SEO, Mercado Livre, Catálogo & Atendimento IA</div>
+    <div class="subtitle">
+      <i class="fas fa-map-pin" style="margin-right: 8px;"></i> Showroom Caxias do Sul • Vendas para todo Brasil com estratégia integrada e atendimento humanizado+IA
+    </div>
   </div>
 
-  <!-- GRID DE ESTRATÉGIA (DIAGRAMA) -->
+  <!-- GRID DE ESTRATÉGIA - VISÃO GERAL -->
   <div class="strategy-grid">
 
-    <!-- CARD 1: ANÁLISE DO PÚBLICO (A/B/C) -->
+    <!-- CARD 1: PÚBLICO & CURVAS -->
     <div class="card">
       <div class="card-header">
-        <i class="fas fa-users"></i>
-        <h2>Público & Curvas</h2>
+        <i class="fas fa-users-between-lines"></i>
+        <h3>Público & Curvas</h3>
       </div>
       <div class="card-content">
-        <p><strong>Três perfis mapeados</strong> (dados IEMI/CSIL + pesquisa local):</p>
+        <div class="image-wrapper">
+          <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Público diverso analisando móveis" loading="lazy">
+        </div>
+        <p><strong>3 perfis mapeados</strong> (dados IEMI/CSIL + pesquisa local 2026):</p>
         <ul class="bullet-list">
-          <li><i class="fas fa-gem"></i> <strong>Público A (Premium):</strong> Classe A, 35-60 anos, busca design autoral e exclusividade. Valoriza curadoria e experiência. Ticket médio > R$8k.</li>
-          <li><i class="fas fa-home"></i> <strong>Público B (Aspiracional):</strong> Classe B+, 28-50 anos, sensível a tendências. Compra parcelado, prioriza custo-benefício do design.</li>
-          <li><i class="fas fa-building"></i> <strong>Público C (Corporativo):</strong> Arquitetos, designers e empresas. Compram em volume, exigem prazos e qualidade consistente.</li>
+          <li><i class="fas fa-gem"></i> <strong>Público A (Premium):</strong> Classe A, 35-60 anos, design autoral. Ticket > R$8k.</li>
+          <li><i class="fas fa-home"></i> <strong>Público B (Aspiracional):</strong> Classe B+, 28-50 anos, compra parcelado, valoriza tendências.</li>
+          <li><i class="fas fa-building"></i> <strong>Público C (Corporativo):</strong> Arquitetos/empresas, compram volume e qualidade.</li>
         </ul>
         <div class="highlight">
-          <i class="fas fa-chart-line" style="margin-right: 6px;"></i>
-          <strong>Curva de produtos:</strong> Itens A (alto giro, ticket menor) → Mercado Livre / catálogo. Itens B e C (maior margem) → Venda consultiva WhatsApp + showroom.
+          <i class="fas fa-chart-line"></i> <strong>Curva de produtos A/B/C:</strong> Itens A (alto giro, ticket menor) → Mercado Livre / catálogo. Itens B e C (maior margem) → Venda consultiva WhatsApp + showroom.
         </div>
-        <span class="tag"><i class="far fa-clock"></i> Consumo 2026: mais planejado</span>
-        <span class="tag"><i class="fas fa-leaf"></i> Sustentabilidade exigida</span>
+        <div class="tag-group">
+          <span class="tag"><i class="fas-regular fa-leaf"></i> Sustentabilidade exigida</span>
+          <span class="tag"><i class="fas fa-mobile"></i> 70% mobile</span>
+        </div>
       </div>
     </div>
 
-    <!-- CARD 2: CANAIS & ANÚNCIOS -->
+    <!-- CARD 2: CANAIS & ANÚNCIOS (FB ADS + CATÁLOGO) -->
     <div class="card">
       <div class="card-header">
-        <i class="fas fa-bullhorn"></i>
-        <h2>Tráfego & Conversão</h2>
+        <i class="fab fa-facebook-f"></i>
+        <h3>Facebook Ads & Catálogo</h3>
       </div>
       <div class="card-content">
-        <p><strong>Facebook Ads → WhatsApp (humanizado + IA)</strong></p>
+        <div class="image-wrapper">
+          <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Anúncios Facebook" loading="lazy">
+        </div>
+        <p><strong>Campanhas de Tráfego e Conversão</strong></p>
         <ul class="bullet-list">
-          <li><i class="fas fa-video"></i> Criativos: vídeos da vendedora no showroom, bastidores, detalhes de design.</li>
-          <li><i class="fas fa-bullseye"></i> Segmentação: interesses em "design de interiores", "arquitetura", "móveis planejados", público similar a marcas premium.</li>
-          <li><i class="fas fa-funnel-dollar"></i> Funil de vendas: anúncio de catálogo → lead no WhatsApp → atendimento IA (triagem) → vendedor humano (fechamento).</li>
+          <li><i class="fas fa-video"></i> <strong>Criativos:</strong> vídeos da vendedora no showroom, bastidores e detalhes de design.</li>
+          <li><i class="fas fa-bullseye"></i> <strong>Segmentação:</strong> interesses em decoração, arquitetura, público similar marcas premium.</li>
+          <li><i class="fas fa-images"></i> <strong>Catálogo no Facebook/Instagram:</strong> feed de produtos com link para WhatsApp ou site.</li>
+          <li><i class="fas fa-retweet"></i> <strong>Remarketing:</strong> impactar quem visitou o catálogo com ofertas personalizadas.</li>
         </ul>
         <div class="highlight">
-          <i class="fab fa-whatsapp"></i> <strong>Case real:</strong> Veste S.A. aumentou conversão para 26% com agente IA no WhatsApp. Midea elevou ticket médio em 41%.
+          <i class="fas fa-chart-simple"></i> <strong>Estratégia 2026:</strong> Anúncios de catálogo dinâmico + vídeos curtos (Reels). CTA claro: "Falar com especialista".
         </div>
-        <span class="tag"><i class="fab fa-facebook"></i> Meta Ads otimizado</span>
-        <span class="tag"><i class="fas fa-map-pin"></i> Remarketing local</span>
+        <span class="tag">Meta Pixel</span>
+        <span class="tag">Conversões API</span>
       </div>
     </div>
 
-    <!-- CARD 3: CATÁLOGO & NOVO SITE -->
+    <!-- CARD 3: NOVO SITE & CATÁLOGO DIGITAL -->
     <div class="card">
       <div class="card-header">
         <i class="fas fa-book-open"></i>
-        <h2>Catálogo Digital</h2>
+        <h3>Catálogo Online</h3>
       </div>
       <div class="card-content">
-        <p><strong>Site atual → Vitrine de conversão</strong></p>
+        <div class="image-wrapper">
+          <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Catálogo digital interativo" loading="lazy">
+        </div>
+        <p><strong>Do site estático à vitrine de vendas</strong></p>
         <ul class="bullet-list">
-          <li><i class="fas fa-tag"></i> Todos os produtos com preço (ou "sob consulta" para itens premium).</li>
-          <li><i class="fas fa-image"></i> Fotos profissionais 360° e vídeos embedados (aumentam conversão em até 85%).</li>
-          <li><i class="fas fa-filter"></i> Filtros por ambiente, estilo, cor, material.</li>
-          <li><i class="fas fa-arrow-right"></i> Call-to-action claro: "Falar com especialista" / "Agendar visita".</li>
+          <li><i class="fas fa-tag"></i> Preços visíveis (ou "sob consulta" para itens premium).</li>
+          <li><i class="fas fa-camera-retro"></i> Fotos 360° e vídeos embedados (+85% conversão).</li>
+          <li><i class="fas fa-filter"></i> Filtros inteligentes por ambiente, estilo, cor.</li>
+          <li><i class="fas fa-qrcode"></i> QR code na loja física para captar leads.</li>
         </ul>
         <div class="highlight">
-          <i class="fas fa-mobile-alt"></i> <strong>Mobile-first:</strong> 70% das buscas por móveis vêm de smartphones. Design responsivo obrigatório.
+          <i class="fas fa-mobile-screen"></i> <strong>Mobile-first obrigatório:</strong> 70% das buscas por móveis vêm de smartphones.
         </div>
-        <button class="btn-dummy"><i class="fas fa-download"></i> Exemplo: Catálogo Interativo (iPaper / FlipHTML5)</button>
+        <button class="btn-dummy"><i class="fas fa-download"></i> Exemplo: Catálogo Interativo (Flipbook)</button>
       </div>
     </div>
 
-    <!-- CARD 4: MERCADO LIVRE (COMISSÕES E ESTRATÉGIA) -->
+    <!-- CARD 4: MERCADO LIVRE - TAXAS E ENTRADA -->
     <div class="card">
       <div class="card-header">
         <i class="fas fa-store"></i>
-        <h2>Mercado Livre</h2>
+        <h3>Mercado Livre</h3>
       </div>
       <div class="card-content">
-        <p><strong>Entrada com curadoria de produtos A/B.</strong></p>
+        <div class="image-wrapper">
+          <img src="https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Marketplace Mercado Livre" loading="lazy">
+        </div>
+        <p><strong>Entrada com produtos de giro rápido (curva A)</strong></p>
         <ul class="bullet-list">
-          <li><i class="fas fa-percent"></i> <strong>Taxas 2026 (Categoria Móveis):</strong> Anúncio Clássico ~11,5% | Premium ~16,5% (oferece parcelamento e mais visibilidade).</li>
-          <li><i class="fas fa-truck"></i> Frete: utilize o programa de frete grátis do Mercado Envios (reduz custo para o vendedor).</li>
-          <li><i class="fas fa-crown"></i> Posicionamento: Anúncios Premium para itens de maior margem; Clássico para produtos de entrada.</li>
+          <li><i class="fas fa-percent"></i> <strong>Taxas 2026 (Categoria Móveis):</strong></li>
+          <li>Clássico: ~11,5% (sem parcelamento)</li>
+          <li>Premium: ~16,5% (até 12x sem juros) → maior exposição</li>
+          <li><i class="fas fa-truck"></i> Frete: utilize Mercado Envios (frete grátis opcional).</li>
         </ul>
         <div class="highlight">
-          <i class="fas fa-calculator"></i> <strong>Simulação (produto R$1.200):</strong> Comissão Premium ~R$198 + frete (se aplicável). Margem líquida deve ser calculada incluindo embalagem/logística.
+          <i class="fas fa-calculator"></i> <strong>Simulação (produto R$1.200):</strong> Comissão Premium ~R$198. Margem líquida deve considerar embalagem/logística.
         </div>
-        <span class="tag">Reputação inicial com vendas menores</span>
-        <span class="tag">Envio Full (opcional)</span>
+        <span class="tag">Reputação inicial</span>
+        <span class="tag">Envio Full</span>
       </div>
     </div>
 
-    <!-- CARD 5: SEO - PRIMEIRA PÁGINA GOOGLE -->
+    <!-- CARD 5: SEO DOMINANTE (GOOGLE) -->
     <div class="card">
       <div class="card-header">
         <i class="fab fa-google"></i>
-        <h2>SEO Dominante</h2>
+        <h3>SEO 2026</h3>
       </div>
       <div class="card-content">
-        <p><strong>Objetivo: ranquear para "móveis alto padrão Caxias do Sul", "sofá design RS", "mesa de jantar premium", etc.</strong></p>
+        <div class="image-wrapper">
+          <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SEO - primeira página Google" loading="lazy">
+        </div>
+        <p><strong>Aparecer na 1ª página do Google (orgânico)</strong></p>
         <ul class="bullet-list">
-          <li><i class="fas fa-key"></i> Palavras-chave de cauda longa + intenção de compra.</li>
-          <li><i class="fas fa-code"></i> SEO Técnico: Core Web Vitals, dados estruturados (Schema de produto).</li>
-          <li><i class="fas fa-pen-nib"></i> Conteúdo: blog com guias ("Como escolher sofá de alto padrão"), tendências, projetos.</li>
+          <li><i class="fas fa-key"></i> Palavras-chave: "móveis alto padrão Caxias", "sofá design RS", "mesa premium".</li>
+          <li><i class="fas fa-code"></i> SEO Técnico: Core Web Vitals, dados estruturados (schema produto).</li>
+          <li><i class="fas fa-pen-nib"></i> Conteúdo: blog com guias, tendências e projetos.</li>
           <li><i class="fas fa-link"></i> Link building: parcerias com designers, portais de arquitetura.</li>
         </ul>
         <div class="highlight">
-          <i class="fas fa-map-marker-alt"></i> <strong>Google Meu Negócio otimizado:</strong> fotos do showroom, posts semanais, avaliações 5★.
+          <i class="fas fa-map-location-dot"></i> <strong>Google Meu Negócio:</strong> fotos do showroom, posts semanais, avaliações 5★.
         </div>
       </div>
     </div>
 
-    <!-- CARD 6: ATENDIMENTO IA + HUMANIZADO -->
+    <!-- CARD 6: ATENDIMENTO IA + HUMANO -->
     <div class="card">
       <div class="card-header">
         <i class="fas fa-robot"></i>
-        <h2>Atendimento IA</h2>
+        <h3>Atendimento IA</h3>
       </div>
       <div class="card-content">
-        <p><strong>Agente de IA integrado ao WhatsApp (ManyChat, Kommo, Zenvia).</strong></p>
+        <div class="image-wrapper">
+          <img src="https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chatbot IA no WhatsApp" loading="lazy">
+        </div>
+        <p><strong>Agente de IA no WhatsApp (24/7)</strong></p>
         <ul class="bullet-list">
-          <li><i class="fas fa-comment-dots"></i> Responde automaticamente dúvidas sobre medidas, prazos, formas de pagamento.</li>
-          <li><i class="fas fa-calendar-check"></i> Agenda visitas ao showroom e envia catálogo digital.</li>
-          <li><i class="fas fa-user-check"></i> Transfere para atendente humano quando necessário (vendas complexas).</li>
+          <li><i class="fas fa-comment-dots"></i> Responde dúvidas sobre medidas, prazos, pagamentos.</li>
+          <li><i class="fas fa-calendar-check"></i> Agenda visitas e envia catálogo digital.</li>
+          <li><i class="fas fa-user-check"></i> Transfere para humano em vendas complexas.</li>
         </ul>
         <div class="highlight">
-          <i class="fas fa-clock"></i> Atendimento 24/7 com tom humanizado. Redução de 30% no tempo de resposta.
+          <i class="fas fa-clock"></i> Atendimento humanizado + IA reduz tempo de resposta em 30% e aumenta conversão.
         </div>
+        <span class="tag">ManyChat / Zenvia</span>
         <span class="tag">CRM integrado</span>
-        <span class="tag">Follow-up automático</span>
       </div>
     </div>
 
-    <!-- CARD 7: LOGÍSTICA & ENTREGA NACIONAL -->
+    <!-- CARD 7: LOGÍSTICA NACIONAL -->
     <div class="card">
       <div class="card-header">
         <i class="fas fa-box-open"></i>
-        <h2>Logística Premium</h2>
+        <h3>Entrega Premium</h3>
       </div>
       <div class="card-content">
-        <p><strong>Entrega para todo Brasil sem loja física.</strong></p>
+        <div class="image-wrapper">
+          <img src="https://images.pexels.com/photos/4246109/pexels-photo-4246109.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logística de móveis" loading="lazy">
+        </div>
+        <p><strong>Vender para todo Brasil sem loja física</strong></p>
         <ul class="bullet-list">
-          <li><i class="fas fa-truck"></i> Transportadoras especializadas em móveis (Design Transportes, Azul Cargo, etc).</li>
-          <li><i class="fas fa-shield-alt"></i> Embalagem reforçada: cantoneiras, plástico bolha, caixas de madeira para itens frágeis.</li>
+          <li><i class="fas fa-truck"></i> Transportadoras especializadas (Design Transportes, Azul Cargo).</li>
+          <li><i class="fas fa-shield"></i> Embalagem reforçada: cantoneiras, plástico bolha, caixas de madeira.</li>
           <li><i class="fas fa-clipboard-list"></i> Rastreamento e seguro contra avarias.</li>
         </ul>
         <div class="highlight">
-          <i class="fas fa-hand-holding-heart"></i> Experiência "unboxing" de luxo: embalagem personalizada Mondez.
+          <i class="fas fa-gift"></i> Experiência "unboxing" de luxo: embalagem personalizada Mondez.
         </div>
       </div>
     </div>
 
-    <!-- CARD 8: MÉTRICAS & RESULTADOS (double col) -->
+    <!-- CARD 8: KPIS & METAS 2026 (double col) -->
     <div class="card double-col">
       <div class="card-header">
         <i class="fas fa-chart-pie"></i>
-        <h2>KPIs & Metas 2026</h2>
+        <h3>KPIs & Metas 2026</h3>
       </div>
       <div class="card-content">
         <div class="metric-row">
           <div class="metric-card">
             <div class="metric-value">30%</div>
             <div>Aumento de leads via tráfego orgânico (SEO)</div>
+            <i class="fas fa-arrow-up" style="color:#2e7d32;"></i>
           </div>
           <div class="metric-card">
             <div class="metric-value">15%</div>
             <div>Conversão Mercado Livre (Premium)</div>
+            <i class="fas fa-arrow-up" style="color:#2e7d32;"></i>
           </div>
           <div class="metric-card">
             <div class="metric-value">80+</div>
             <div>Palavras-chave na 1ª página do Google</div>
+            <i class="fas fa-magnifying-glass"></i>
           </div>
           <div class="metric-card">
             <div class="metric-value">4.8★</div>
             <div>Reputação no Mercado Livre</div>
+            <i class="fas fa-star" style="color:#f1c40f;"></i>
           </div>
         </div>
         <hr>
-        <p><strong>Roadmap resumido:</strong> Mês 1-2: novo site/catálogo + SEO on-page. Mês 3: ativação Mercado Livre (anúncios Clássico). Mês 4: agente IA WhatsApp. Mês 6: escala Premium e remarketing.</p>
+        <div class="roadmap-step">
+          <span class="step-box"><i class="fas fa-calendar"></i> Mês 1-2: Novo site/catálogo + SEO on-page</span>
+          <i class="fas fa-arrow-right arrow-icon"></i>
+          <span class="step-box"><i class="fas fa-calendar"></i> Mês 3: Ativação Mercado Livre (anúncios Clássico)</span>
+          <i class="fas fa-arrow-right arrow-icon"></i>
+          <span class="step-box"><i class="fas fa-calendar"></i> Mês 4: Agente IA WhatsApp</span>
+          <i class="fas fa-arrow-right arrow-icon"></i>
+          <span class="step-box"><i class="fas fa-calendar"></i> Mês 6: Escala Premium + remarketing</span>
+        </div>
       </div>
     </div>
 
-    <!-- CARD 9: CONCORRÊNCIA & POSICIONAMENTO -->
+    <!-- CARD 9: CONCORRÊNCIA & DIFERENCIAIS -->
     <div class="card">
       <div class="card-header">
         <i class="fas fa-search"></i>
-        <h2>Inteligência de Mercado</h2>
+        <h3>Posicionamento</h3>
       </div>
       <div class="card-content">
-        <p><strong>Concorrentes locais (Caxias do Sul):</strong> Movelaria, Casa Provença, Tolle Móveis. Diferencial Mondez: curadoria + 20 anos + atendimento humanizado.</p>
-        <p><strong>Mercado Livre:</strong> foco em design autoral, fugindo da guerra de preços. Use a marca "Mondez" como sinônimo de qualidade.</p>
-        <span class="tag">Nichos: sofás orgânicos, mesas de centro esculturais</span>
+        <div class="image-wrapper">
+          <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Diferencial competitivo" loading="lazy">
+        </div>
+        <p><strong>Concorrentes locais:</strong> Movelaria, Casa Provença. Diferencial Mondez: curadoria + 20 anos + atendimento humanizado.</p>
+        <p><strong>Mercado Livre:</strong> focar em design autoral, fugir da guerra de preços.</p>
+        <span class="tag">Sofás orgânicos</span>
+        <span class="tag">Mesas esculturais</span>
       </div>
     </div>
+  </div><!-- FIM GRID -->
 
-  </div> <!-- fim grid -->
-
-  <!-- DETALHES ADICIONAIS: TABELA DE TAXAS ML + SEO TÉCNICO -->
-  <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px;">
-    <div style="flex: 2; min-width: 280px; background: #ffffffc9; border-radius: 28px; padding: 24px; backdrop-filter: blur(4px); border: 1px solid #e2ddd7;">
-      <h3 style="display: flex; gap: 12px; margin-bottom: 16px;"><i class="fas fa-file-invoice-dollar" style="color: #b07d4b;"></i> Detalhamento Mercado Livre (2026)</h3>
-      <table style="width:100%; border-collapse: collapse;">
-        <tr style="border-bottom:1px solid #ccc5bd;"><th>Tipo de Anúncio</th><th>Comissão (Categoria Móveis)</th><th>Parcelamento</th><th>Indicação</th></tr>
-        <tr><td>Clássico</td><td>~11,5%</td><td>Até 6x (com juros)</td><td>Produtos de giro rápido, ticket até R$800</td></tr>
-        <tr><td>Premium</td><td>~16,5%</td><td>Até 12x sem juros</td><td>Itens de design, ticket > R$1.500</td></tr>
-      </table>
-      <p style="margin-top: 18px;"><i class="fas fa-info-circle"></i> Custo fixo adicional para produtos < R$79. Frete grátis pode ser ativado para melhorar conversão.</p>
+  <!-- SEÇÃO DETALHADA: PASSO A PASSO PIXEL + MERCADO LIVRE + SEO -->
+  <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 30px;">
+    <!-- PASSO A PASSO FACEBOOK PIXEL -->
+    <div style="flex: 2; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02); border: 1px solid #EBE7E2;">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+        <i class="fab fa-meta" style="font-size: 2.4rem; color: #A77B55;"></i>
+        <h3 style="margin-bottom: 0;">Instalação do Meta Pixel (Passo a Passo)</h3>
+      </div>
+      <div class="image-wrapper" style="margin-bottom: 16px;">
+        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Configuração pixel Facebook" loading="lazy">
+      </div>
+      <ol style="margin-left: 20px; margin-bottom: 20px; list-style-type: decimal; color: #2c2b28;">
+        <li style="margin-bottom: 8px;"><strong>Criar Pixel:</strong> No Gerenciador de Eventos do Meta, clique em “Conectar fontes de dados” → “Web” → “Pixel do Meta”. Nomeie como "Mondez Pixel".</li>
+        <li style="margin-bottom: 8px;"><strong>Instalar no site:</strong> Copie o código base e cole entre as tags <head> de todas as páginas. Se usar WordPress, use plugin "Meta Pixel".</li>
+        <li style="margin-bottom: 8px;"><strong>Configurar eventos:</strong> Adicione eventos padrão como "ViewContent" (quando visualizar produto), "AddToCart" e "Purchase". Use a ferramenta "Configurações de Eventos" do Pixel.</li>
+        <li style="margin-bottom: 8px;"><strong>Verificar com Pixel Helper:</strong> Instale a extensão do Chrome e verifique se o pixel está disparando corretamente.</li>
+        <li style="margin-bottom: 8px;"><strong>Integrar API de Conversões:</strong> Para maior precisão, configure a API de Conversões (via Gerenciador de Eventos). Isso melhora a atribuição.</li>
+      </ol>
+      <div class="highlight">
+        <i class="fas fa-lightbulb"></i> <strong>Dica:</strong> Crie públicos personalizados com base em quem visitou páginas de produtos específicos para remarketing.
+      </div>
+      <span class="tag">Guia atualizado 2026</span>
+      <span class="tag">Eventos padrão</span>
     </div>
-    <div style="flex: 3; min-width: 300px; background: #ffffffc9; border-radius: 28px; padding: 24px; backdrop-filter: blur(4px); border: 1px solid #e2ddd7;">
-      <h3 style="display: flex; gap: 12px; margin-bottom: 16px;"><i class="fas fa-magnifying-glass-chart"></i> SEO Passo a Passo (2026)</h3>
-      <ul class="bullet-list">
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Pesquisa de palavras-chave:</strong> "sofá design atemporal", "mesa de jantar premium RS", "móveis alto padrão Caxias".</li>
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Otimização On-Page:</strong> Title, meta description, URLs amigáveis, headings com palavras-chave.</li>
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Conteúdo:</strong> blog semanal com projetos, tendências, dicas de decoração.</li>
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Link Building:</strong> guest posts em sites de arquitetura, parcerias com influenciadores locais.</li>
-        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Google Meu Negócio:</strong> manter atualizado, responder perguntas, publicar fotos semanalmente.</li>
-      </ul>
+
+    <!-- PASSO A PASSO MERCADO LIVRE -->
+    <div style="flex: 3; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02); border: 1px solid #EBE7E2;">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
+        <i class="fas fa-cart-shopping" style="font-size: 2.4rem; color: #A77B55;"></i>
+        <h3 style="margin-bottom: 0;">Como criar sua loja no Mercado Livre</h3>
+      </div>
+      <ol style="margin-left: 20px; list-style-type: decimal;">
+        <li style="margin-bottom: 8px;"><strong>Cadastro:</strong> Acesse "Vender" no Mercado Livre. Preencha dados da empresa (CNPJ) e conta bancária.</li>
+        <li style="margin-bottom: 8px;"><strong>Configurar reputação:</strong> Comece vendendo produtos de ticket menor para ganhar as primeiras avaliações positivas.</li>
+        <li style="margin-bottom: 8px;"><strong>Anúncios:</strong> Escolha entre Clássico (11,5%) ou Premium (16,5%). Para móveis de alto padrão, o Premium oferece parcelamento e mais visibilidade.</li>
+        <li style="margin-bottom: 8px;"><strong>Logística:</strong> Ative o Mercado Envios e considere o Full para armazenar produtos nos centros de distribuição do ML.</li>
+        <li style="margin-bottom: 8px;"><strong>Estratégia de preço:</strong> Simule com a calculadora de taxas (disponível no site do Mercado Livre) para garantir margem.</li>
+      </ol>
+      <table class="fee-table">
+        <tr><th>Produto</th><th>Preço</th><th>Comissão (Premium)</th><th>Lucro Bruto Estimado</th></tr>
+        <tr><td>Cadeira design</td><td>R$ 450</td><td>~R$ 74,25</td><td>~R$ 375</td></tr>
+        <tr><td>Mesa de centro</td><td>R$ 890</td><td>~R$ 146,85</td><td>~R$ 743</td></tr>
+        <tr><td>Sofá premium</td><td>R$ 2.400</td><td>~R$ 396</td><td>~R$ 2.004</td></tr>
+      </table>
+      <div class="highlight" style="margin-top: 16px;">
+        <i class="fas fa-chart-bar"></i> <strong>Meta 2026:</strong> 15% de conversão no Mercado Livre, reputação 4.8★, presença nacional.
+      </div>
     </div>
   </div>
 
-  <!-- NOTA SOBRE CATÁLOGO -->
-  <div style="margin-top: 32px; background: #1e1d1b; color: #ece7e0; border-radius: 32px; padding: 28px 32px;">
-    <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
-      <i class="fas fa-layer-group" style="font-size: 2.8rem;"></i>
-      <div>
-        <h3 style="color: white; font-size: 1.8rem; font-weight: 500;">Catálogo Estratégico • Do digital ao físico</h3>
-        <p style="opacity: 0.9;">Todos os produtos fotografados em alta resolução, com medidas e variações. Versão online (flipbook) enviada pelo WhatsApp e integrada ao site. Incluir QR code na loja física para capturar leads.</p>
+  <!-- SEÇÃO: SEO PASSO A PASSO + GOOGLE MEU NEGÓCIO -->
+  <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 30px;">
+    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
+      <h3 style="display: flex; gap: 10px;"><i class="fab fa-google" style="color:#A77B55;"></i> SEO para Mondez Móveis</h3>
+      <ul class="bullet-list">
+        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Palavras-chave:</strong> "móveis alto padrão", "sofá design RS", "mesa de jantar premium".</li>
+        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Otimização On-Page:</strong> Title, meta description, headings com palavras-chave.</li>
+        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Conteúdo:</strong> blog semanal com projetos, tendências e dicas.</li>
+        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Link Building:</strong> guest posts em sites de arquitetura e parcerias com influenciadores.</li>
+        <li><i class="fas fa-check-circle" style="color:#2a6f4c;"></i> <strong>Google Meu Negócio:</strong> atualizações diárias, responder perguntas, fotos.</li>
+      </ul>
+      <div class="image-wrapper" style="margin-top: 12px;">
+        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Otimização Google Meu Negócio" loading="lazy">
       </div>
+    </div>
+    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
+      <h3 style="display: flex; gap: 10px;"><i class="fas fa-robot"></i> Agente IA + WhatsApp</h3>
+      <ul class="bullet-list">
+        <li><i class="fas fa-comment"></i> Integração com ManyChat, Kommo ou Zenvia.</li>
+        <li><i class="fas fa-clock"></i> Atendimento 24/7 com respostas automáticas para dúvidas frequentes.</li>
+        <li><i class="fas fa-user-plus"></i> Coleta de leads e agendamento de visitas.</li>
+        <li><i class="fas fa-arrow-right"></i> Transbordo para vendedor humano em negociações complexas.</li>
+      </ul>
+      <div class="highlight">
+        <i class="fas fa-percent"></i> Empresas que adotam IA no atendimento aumentam em até 30% a taxa de conversão.
+      </div>
+    </div>
+  </div>
+
+  <!-- BANNER FINAL: CATÁLOGO ESTRATÉGICO -->
+  <div style="margin-top: 36px; background: #1E1D1B; color: #F2EDE7; border-radius: 42px; padding: 30px 32px;">
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <i class="fas fa-layer-group" style="font-size: 3.2rem;"></i>
+      <div>
+        <h3 style="color: white; font-size: 2rem; font-weight: 500;">Catálogo Digital: a vitrine que vende</h3>
+        <p style="opacity: 0.9; margin-top: 8px;">Todos os produtos fotografados em alta resolução, com medidas e variações. Versão online (flipbook) enviada pelo WhatsApp e integrada ao site. Incluir QR code na loja física para capturar leads.</p>
+      </div>
+    </div>
+    <hr style="background: #5E5B56; margin: 22px 0 12px;">
+    <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+      <div><i class="fas fa-check"></i> Fotos 360°</div>
+      <div><i class="fas fa-check"></i> Preços visíveis</div>
+      <div><i class="fas fa-check"></i> Integração com WhatsApp</div>
+      <div><i class="fas fa-check"></i> SEO-friendly</div>
     </div>
   </div>
 
   <div class="footer-note">
-    <i class="far fa-copy"></i> Estratégia desenvolvida para Mondez Móveis • Baseada em dados IEMI, CSIL, Mercado Livre, relatórios Setor Moveleiro 2026 e cases de IA.
+    <i class="far fa-copy"></i> Estratégia desenvolvida para Mondez Móveis • Dados atualizados 2026 (IEMI, Mercado Livre, Meta) • Atendimento humanizado + inovação.
   </div>
 </div>
 </body>
