@@ -1,760 +1,466 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <meta name="description" content="Estratégia digital completa para Mondez Móveis: SEO, Mercado Livre, Google Shopping, Marketing de Conteúdo e muito mais.">
-  <meta name="theme-color" content="#1E1D1B">
-  <title>Estratégia Mondez Móveis • Expansão Digital 2026</title>
-  
-  <!-- Fontes & Ícones -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Reset & Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #F9F7F5;
-      color: #1E1D1B;
-      line-height: 1.5;
-      padding: 20px 16px 40px;
-    }
-
-    .diagram-container {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    /* Tipografia */
-    h1, h2, h3, h4, .section-title {
-      font-family: 'Outfit', sans-serif;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 7vw, 3.5rem);
-      line-height: 1.1;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      font-size: clamp(1.6rem, 5vw, 2.2rem);
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .badge {
-      background: #C59A6B;
-      color: white;
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 6px 18px;
-      border-radius: 40px;
-      letter-spacing: 0.3px;
-      display: inline-block;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      color: #5E5B56;
-      margin-bottom: 30px;
-      border-left: 5px solid #C59A6B;
-      padding-left: 20px;
-    }
-
-    /* Grid Principal */
-    .strategy-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-bottom: 30px;
-    }
-
-    .card {
-      background: #FFFFFF;
-      border-radius: 36px;
-      padding: 26px 24px;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.02);
-      border: 1px solid #EBE7E2;
-      transition: transform 0.25s ease, box-shadow 0.3s;
-      backdrop-filter: blur(2px);
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 24px 40px rgba(0, 0, 0, 0.06);
-      border-color: #D1BBA3;
-    }
-
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 22px;
-    }
-
-    .card-header i {
-      font-size: 2rem;
-      color: #A77B55;
-      background: #F0E9E2;
-      width: 54px;
-      height: 54px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 20px;
-    }
-
-    .card-header h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-
-    .card-content {
-      color: #3A3732;
-    }
-
-    .highlight {
-      background: #F5F0EB;
-      padding: 18px 18px;
-      border-radius: 22px;
-      margin: 20px 0 12px;
-      border-left: 4px solid #C59A6B;
-      font-size: 0.95rem;
-    }
-
-    .bullet-list {
-      list-style: none;
-      margin: 12px 0;
-    }
-
-    .bullet-list li {
-      padding: 8px 0;
-      display: flex;
-      align-items: baseline;
-      gap: 12px;
-      border-bottom: 1px dashed #E6DFD9;
-    }
-
-    .bullet-list li:last-child {
-      border-bottom: none;
-    }
-
-    .bullet-list i {
-      color: #A77B55;
-      font-size: 1rem;
-      width: 22px;
-      text-align: center;
-      margin-top: 3px;
-    }
-
-    .tag-group {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .tag {
-      background: #EAE3DC;
-      padding: 6px 16px;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #2C2822;
-    }
-
-    .image-wrapper {
-      margin: 20px 0 10px;
-      border-radius: 24px;
-      overflow: hidden;
-      border: 1px solid #E7E0DA;
-    }
-
-    .image-wrapper img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-      aspect-ratio: 16/9;
-    }
-
-    .double-col {
-      grid-column: span 2;
-    }
-
-    .full-col {
-      grid-column: span 3;
-    }
-
-    .metric-row {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .metric-card {
-      background: #FAF8F6;
-      border-radius: 24px;
-      padding: 20px 18px;
-      flex: 1 1 160px;
-      border: 1px solid #E3DDD7;
-    }
-
-    .metric-value {
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: #1E1D1B;
-      line-height: 1;
-    }
-
-    .arrow-icon {
-      color: #C59A6B;
-      font-size: 1.8rem;
-      margin: 0 5px;
-    }
-
-    hr {
-      margin: 30px 0 20px;
-      border: 0;
-      height: 1px;
-      background: linear-gradient(to right, transparent, #D1C7BE, transparent);
-    }
-
-    .footer-note {
-      text-align: center;
-      color: #78736C;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-
-    .btn-dummy {
-      background: #1E1D1B;
-      color: white;
-      border: none;
-      padding: 14px 18px;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      width: 100%;
-      margin-top: 18px;
-      text-align: center;
-      cursor: default;
-      border: 1px solid #3A3732;
-      transition: background 0.2s;
-    }
-
-    .btn-dummy i {
-      margin-right: 8px;
-    }
-
-    /* Seções Especiais */
-    .roadmap-step {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px 0;
-    }
-
-    .step-box {
-      background: #F0E9E2;
-      padding: 10px 16px;
-      border-radius: 40px;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    /* Tabelas */
-    .fee-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    .fee-table td, .fee-table th {
-      padding: 10px 6px;
-      border-bottom: 1px solid #E0D8D1;
-      text-align: left;
-    }
-
-    .fee-table th {
-      font-weight: 600;
-      color: #1E1D1B;
-    }
-
-    /* Responsivo */
-    @media (max-width: 900px) {
-      .strategy-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      .double-col, .full-col {
-        grid-column: span 1;
-      }
-      body {
-        padding: 12px 10px 30px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .card {
-        padding: 20px 16px;
-      }
-      .card-header i {
-        width: 46px;
-        height: 46px;
-        font-size: 1.6rem;
-      }
-      .metric-value {
-        font-size: 2rem;
-      }
-    }
-
-    /* Animações */
-    .fade-in {
-      animation: fadeIn 0.5s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Ilustrações */
-    .img-fluid {
-      max-width: 100%;
-      border-radius: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Método Triple 1 - Ensaio Fotográfico com IA Gratuita</title>
+    <meta name="description" content="Crie seu próprio ensaio fotográfico profissional com uma IA Gratuita. Em menos de 30 minutos.">
+    <style>
+        /* ========== RESET ========== */
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:#020913;color:#fff;font-family:'Clash Display',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:1rem;line-height:1.5;overflow-x:hidden}
+        h1,h2,h3{font-family:'Clash Display',sans-serif;font-weight:600;line-height:1.2}
+        p{margin-bottom:.9rem}
+        a{color:#3E9ED8;text-decoration:none}
+        img{max-width:100%;height:auto;display:block}
+        button{cursor:pointer;background:transparent;border:none}
+        
+        /* ========== SCROLLBAR ========== */
+        body::-webkit-scrollbar{width:9px}
+        body::-webkit-scrollbar-track{background:#020913}
+        body::-webkit-scrollbar-thumb{background:#0838F2;border-radius:0}
+        
+        /* ========== ANIMAÇÕES DE SCROLL ========== */
+        .scroll-bottom{opacity:0;filter:blur(10px);transition:.5s all;transform:translateY(30px)}
+        .scroll-left{opacity:0;filter:blur(10px);transition:.5s all;transform:translateX(-30px)}
+        .scroll-right{opacity:0;filter:blur(10px);transition:.5s all;transform:translateX(30px)}
+        .ativado{opacity:1;filter:blur(0);transform:translate(0,0)}
+        
+        /* ========== GRADIENTES DE TEXTO ========== */
+        .gradient-text{background:linear-gradient(135deg,#F7F8FC 0%,#686B74 100%);background-clip:text;-webkit-background-clip:text;color:transparent!important}
+        
+        /* ========== BOTÃO COM BRILHO ========== */
+        .btn-glow{position:relative;display:inline-block;overflow:hidden;background:linear-gradient(90deg,#1A38FB,#4586FF);border-radius:10px;transition:.5s}
+        .btn-glow:hover{background:linear-gradient(90deg,#1AFB65,#0DD0C6)}
+        .btn-glow::before{content:'';position:absolute;top:0;left:-10%;width:90px;height:160%;background:linear-gradient(10deg,#D1D2EA 12.81%,transparent 66.66%);transform:skew(-25deg);filter:blur(4px);animation:shinery 3s infinite ease-in-out;pointer-events:none}
+        @keyframes shinery{0%,100%{left:-10%;opacity:0}20%{opacity:1}48%{left:110%;opacity:1}51%{opacity:0}}
+        .btn-glow::after{content:'';position:absolute;top:-3px;left:-3px;right:-3px;bottom:-3px;border-radius:12px;border:1px solid rgba(173,173,173,.25);pointer-events:none}
+        .btn-glow a,.btn-glow button{display:block;padding:30px 80px;font-family:'Clash Display',sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;color:#fff;background:transparent;border:none;cursor:pointer}
+        @media(max-width:768px){.btn-glow a,.btn-glow button{padding:25px 20px;font-size:14px}}
+        
+        /* ========== HEADER STICKY COM BLUR ========== */
+        .header{position:sticky;top:0;z-index:900;background:rgba(2,9,19,.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(8,56,242,.5);padding:10px 20px}
+        .header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+        .logo img{width:180px}@media(max-width:768px){.logo img{width:120px}}
+        .nav-buttons{display:flex;gap:15px}
+        .btn-outline{background:rgba(255,255,255,.18);border:1px solid #666;border-radius:10px;padding:12px 25px;font-size:11px;font-weight:600;text-transform:uppercase;color:#fff;transition:.3s}
+        .btn-outline:hover{transform:translateY(-3px)}
+        .btn-primary{background:#3E9ED8;border-radius:10px;padding:12px 25px;font-size:11px;font-weight:600;text-transform:uppercase;color:#fff;transition:.3s}
+        .btn-primary:hover{background:#D0EBEB;color:#020913;transform:translateY(-3px)}
+        @media(max-width:768px){.btn-outline,.btn-primary{padding:10px 12px;font-size:9px}}
+        
+        /* ========== HERO ========== */
+        .hero{background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#020913"/><stop offset="100%" stop-color="#0a1a3a"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#g)"/><circle cx="20%" cy="30%" r="300" fill="#1A38FB" opacity="0.05"/><circle cx="80%" cy="70%" r="400" fill="#4586FF" opacity="0.05"/></svg>') no-repeat center/cover;padding:120px 20px}
+        .hero-container{max-width:1140px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:40px}
+        .hero-content{flex:1;text-align:left}
+        .hero-content h1{font-size:42px;margin-bottom:20px}@media(max-width:768px){.hero-content h1{font-size:32px;text-align:center}}
+        .hero-content p{font-size:16px;color:#ccc;margin-bottom:30px}
+        .hero-buttons{display:flex;flex-wrap:wrap;gap:20px;margin-top:20px}
+        .badge-img{margin-top:30px;opacity:.4;max-width:300px}
+        @media(max-width:768px){.hero-content,.hero-content h1,.hero-content p{text-align:center}.hero-buttons{justify-content:center}}
+        
+        /* ========== TICKER (carrossel de texto infinito) ========== */
+        .ticker{white-space:nowrap;padding:12px 0;background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border-top:1px solid #1A38FB;border-bottom:1px solid #1A38FB;transform:rotate(-2deg) scale(1.02);margin:0 -10px}
+        .ticker-track{display:inline-block;animation:ticker-scroll 12s linear infinite}
+        .ticker-item{display:inline-block;font-family:'Sora',sans-serif;font-size:18px;font-weight:600;letter-spacing:1px;color:#fff;padding-right:30px}
+        @keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+        .ticker-reverse{transform:rotate(2deg) scale(1.02);margin-top:-2px}
+        .ticker-reverse .ticker-track{animation-direction:reverse}
+        
+        /* ========== SEÇÕES GERAIS ========== */
+        .section{max-width:1280px;margin:0 auto;padding:80px 20px;text-align:center}
+        .section-bg{background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="#0C1018"/><circle cx="50%" cy="50%" r="200" fill="#1A38FB" opacity="0.05"/></svg>') center/cover}
+        .section-title{font-size:45px;margin-bottom:20px}@media(max-width:768px){.section-title{font-size:32px}}
+        .section-sub{font-size:16px;color:#ccc;max-width:800px;margin:0 auto 40px}
+        .badge-top{display:inline-block;background:rgba(61,64,83,.44);border-radius:100px;padding:8px 24px;font-size:12px;text-transform:uppercase;margin-bottom:20px}
+        
+        /* ========== COMPARADOR DE IMAGENS (antes/depois) ========== */
+        .compare-grid{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin:40px 0}
+        .compare-card{flex:1;min-width:250px;background:rgba(12,16,24,0);border-radius:20px;padding:15px;transition:.3s}
+        .compare-card:hover{border:1px solid #232328}
+        .twentytwenty-container{position:relative;overflow:hidden;border-radius:20px;cursor:pointer}
+        .twentytwenty-container img{width:100%;display:block;position:absolute;top:0;left:0}
+        .twentytwenty-before{position:relative;z-index:10}
+        .twentytwenty-after{position:absolute;z-index:5}
+        .twentytwenty-handle{position:absolute;left:50%;top:50%;width:40px;height:40px;margin-left:-20px;margin-top:-20px;border:2px solid #fff;border-radius:50%;background:transparent;z-index:40;cursor:pointer}
+        .twentytwenty-handle:before,.twentytwenty-handle:after{content:'';position:absolute;background:#fff;width:2px;height:30px;left:50%;margin-left:-1px}
+        .twentytwenty-handle:before{top:-30px}
+        .twentytwenty-handle:after{bottom:-30px}
+        .twentytwenty-left-arrow,.twentytwenty-right-arrow{position:absolute;top:50%;width:0;height:0;border:6px solid transparent}
+        .twentytwenty-left-arrow{border-right-color:#fff;left:10px;margin-top:-6px}
+        .twentytwenty-right-arrow{border-left-color:#fff;right:10px;margin-top:-6px}
+        .twentytwenty-before-label,.twentytwenty-after-label{position:absolute;top:20px;background:rgba(26,56,251,.7);padding:5px 15px;border-radius:20px;font-size:12px;color:#fff;z-index:30}
+        .twentytwenty-before-label{left:20px}
+        .twentytwenty-after-label{right:20px}
+        
+        /* ========== CARROSSEL DE IMAGENS ========== */
+        .image-carousel{overflow:visible;position:relative;padding:20px 0}
+        .swiper{overflow:visible!important}
+        .swiper-wrapper{display:flex;transition-timing-function:linear!important}
+        .swiper-slide{width:300px;flex-shrink:0}
+        .swiper-slide img{width:100%;border-radius:0;transition:.3s}
+        .swiper-button-next,.swiper-button-prev{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;background:rgba(0,0,0,.5);border-radius:50%;color:#fff;z-index:100;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px}
+        .swiper-button-prev{left:20px}
+        .swiper-button-next{right:20px}
+        @media(max-width:768px){.swiper-button-prev{left:5px}.swiper-button-next{right:5px}}
+        
+        /* ========== CARDS DE BENEFÍCIOS ========== */
+        .benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin:50px 0}
+        .benefit-card{background:rgba(12,16,24,.82);border:1px solid #232328;border-radius:20px;padding:30px;text-align:left;transition:.3s}
+        .benefit-card:hover{transform:translateY(-5px)}
+        .benefit-icon{width:60px;margin-bottom:15px}
+        .benefit-title{font-size:18px;margin-bottom:10px;background:linear-gradient(135deg,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text;color:transparent}
+        .benefit-desc{font-size:14px;color:#ccc;line-height:1.4}
+        .line-blue{height:2px;background:#0838F2;box-shadow:0 10px 24px #0838F2;width:80px;margin-bottom:20px}
+        
+        /* ========== PREÇO ========== */
+        .price-card{background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border-radius:20px;border:1px solid rgba(255,255,255,.12);padding:50px;max-width:500px;margin:0 auto;text-align:center}
+        .price-old{font-size:14px;color:#aaa;text-decoration:line-through}
+        .price-new{font-size:70px;font-weight:700;margin:10px 0;background:linear-gradient(135deg,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text;color:transparent}
+        .price-installment{font-size:16px;color:#ccc}
+        
+        /* ========== FAQ (TOGGLE) ========== */
+        .faq-grid{display:flex;flex-wrap:wrap;gap:40px;margin-top:40px}
+        .faq-info{flex:1}
+        .faq-list{flex:2}
+        .faq-item{background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px}
+        .faq-question{padding:25px;font-size:16px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+        .faq-question i{transition:.3s;color:#0838F2}
+        .faq-answer{padding:0 25px 25px;display:none;font-size:14px;color:#ccc;line-height:1.6}
+        .faq-item.active .faq-answer{display:block}
+        .faq-item.active .faq-question i{transform:rotate(90deg)}
+        
+        /* ========== RODAPÉ ========== */
+        .footer{background:#020913;padding:40px 20px;border-top:1px solid rgba(255,255,255,.1);margin-top:60px}
+        .footer-inner{max-width:1140px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
+        .footer-logo img{width:150px}
+        .footer-copyright{font-size:11px;color:#ABABAB}
+        .back-to-top{color:#fff;font-size:12px;font-weight:600;text-transform:uppercase;display:flex;align-items:center;gap:5px}
+        @media(max-width:768px){.footer-inner{flex-direction:column;text-align:center}}
+        
+        /* ========== CURSOR PERSONALIZADO ========== */
+        .cursor-dot,.cursor-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);display:none}
+        @media(min-width:1024px){.cursor-dot{display:block;width:6px;height:6px;background:#fff}.cursor-ring{display:block;width:40px;height:40px;border:2px solid #0838F2;transition:.1s}}
+        
+        /* ========== RESPONSIVO ========== */
+        @media(max-width:768px){.section{padding:50px 16px}.benefits-grid{grid-template-columns:1fr}.price-card{padding:30px 20px}}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-<div class="diagram-container fade-in">
-  
-  <!-- CABEÇALHO ESTRATÉGICO -->
-  <div class="strategy-header">
-    <h1>
-      MONDEZ MÓVEIS • 2026
-      <span class="badge">EXPANSÃO NACIONAL</span>
-    </h1>
-    <div class="subtitle">
-      <i class="fas fa-map-pin" style="margin-right: 8px;"></i> Showroom Caxias do Sul • Vendas para todo Brasil com estratégia integrada e atendimento humanizado+IA
-    </div>
-  </div>
 
-  <!-- GRID DE ESTRATÉGIA - VISÃO GERAL -->
-  <div class="strategy-grid">
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
 
-    <!-- CARD 1: PÚBLICO & CURVAS (ATUALIZADO) -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fas fa-users-between-lines"></i>
-        <h3>Público & Curvas</h3>
-      </div>
-      <div class="card-content">
-        <div class="image-wrapper">
-          <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Público diverso analisando móveis" loading="lazy">
+<!-- HEADER -->
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 80'%3E%3Ctext x='0' y='50' font-family='Arial' font-size='40' fill='white' font-weight='bold'%3EM%C3%89TODO TRIPLE 1%3C/text%3E%3C/svg%3E" alt="Logo">
         </div>
-        <p><strong>3 perfis mapeados</strong> (dados IEMI/CSIL + pesquisa local 2026):</p>
-        <ul class="bullet-list">
-          <li><i class="fas fa-gem"></i> <strong>Público A (Premium):</strong> Classe A, 35-60 anos, design autoral. Ticket > R$8k.</li>
-          <li><i class="fas fa-home"></i> <strong>Público B (Aspiracional):</strong> Classe B+, 28-50 anos, compra parcelado, valoriza tendências.</li>
-          <li><i class="fas fa-users"></i> <strong>Público C (Ticket Menor + Corporativo):</strong> Consumidores de ticket mais baixo (pessoa física) e empresas. Buscam custo-benefício, funcionalidade e design acessível.</li>
-        </ul>
-        <div class="highlight">
-          <i class="fas fa-chart-line"></i> <strong>Curva de produtos A/B/C:</strong> Itens A (alto giro, ticket menor) → Mercado Livre / catálogo. Itens B e C (maior margem) → Venda consultiva WhatsApp + showroom.
+        <div class="nav-buttons">
+            <a href="#faq" class="btn-outline"><i class="far fa-user"></i> SUPORTE</a>
+            <a href="#price" class="btn-primary">GARANTIR ACESSO</a>
         </div>
-        <div class="tag-group">
-          <span class="tag"><i class="fas-regular fa-leaf"></i> Sustentabilidade exigida</span>
-          <span class="tag"><i class="fas fa-mobile"></i> 70% mobile</span>
-        </div>
-      </div>
     </div>
+</header>
 
-    <!-- CARD 2: CANAIS & ANÚNCIOS (FB/IG ADS) -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fab fa-facebook-f"></i>
-        <h3>Meta Ads (Facebook/Instagram)</h3>
-      </div>
-      <div class="card-content">
-        <div class="image-wrapper">
-          <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Anúncios Facebook" loading="lazy">
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content scroll-bottom">
+            <h1 class="gradient-text">Crie seu próprio ensaio fotográfico profissional com uma IA Gratuita.</h1>
+            <p><strong>Em menos de 30 minutos,</strong> sem contratar ninguém e usando apenas UMA ferramenta de Inteligência Artificial que é 100% gratuita.</p>
+            <div class="hero-buttons">
+                <div class="btn-glow"><a href="#price">EU QUERO TER ACESSO AGORA</a></div>
+            </div>
+            <img class="badge-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 100'%3E%3Crect width='600' height='100' fill='none'/%3E%3C/svg%3E" alt="Selos">
         </div>
-        <p><strong>Campanhas de Tráfego e Conversão</strong></p>
-        <ul class="bullet-list">
-          <li><i class="fas fa-video"></i> <strong>Criativos:</strong> vídeos da vendedora no showroom, bastidores e detalhes de design.</li>
-          <li><i class="fas fa-bullseye"></i> <strong>Segmentação:</strong> interesses em decoração, arquitetura, público similar marcas premium.</li>
-          <li><i class="fas fa-images"></i> <strong>Catálogo no Facebook/Instagram:</strong> feed de produtos com link para WhatsApp ou site.</li>
-          <li><i class="fas fa-retweet"></i> <strong>Remarketing:</strong> impactar quem visitou o catálogo com ofertas personalizadas.</li>
-        </ul>
-        <div class="highlight">
-          <i class="fas fa-chart-simple"></i> <strong>Estratégia 2026:</strong> Anúncios de catálogo dinâmico + vídeos curtos (Reels). CTA claro: "Falar com especialista".
-        </div>
-        <span class="tag">Meta Pixel</span>
-        <span class="tag">Conversões API</span>
-      </div>
     </div>
+</section>
 
-    <!-- CARD 3: NOVO SITE & CATÁLOGO DIGITAL -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fas fa-book-open"></i>
-        <h3>Catálogo Online</h3>
-      </div>
-      <div class="card-content">
-        <div class="image-wrapper">
-          <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Catálogo digital interativo" loading="lazy">
-        </div>
-        <p><strong>Do site estático à vitrine de vendas</strong></p>
-        <ul class="bullet-list">
-          <li><i class="fas fa-tag"></i> Preços visíveis (ou "sob consulta" para itens premium).</li>
-          <li><i class="fas fa-camera-retro"></i> Fotos 360° e vídeos embedados (+85% conversão).</li>
-          <li><i class="fas fa-filter"></i> Filtros inteligentes por ambiente, estilo, cor.</li>
-          <li><i class="fas fa-qrcode"></i> QR code na loja física para captar leads.</li>
-        </ul>
-        <div class="highlight">
-          <i class="fas fa-mobile-screen"></i> <strong>Mobile-first obrigatório:</strong> 70% das buscas por móveis vêm de smartphones.
-        </div>
-        <button class="btn-dummy"><i class="fas fa-download"></i> Exemplo: Catálogo Interativo (Flipbook)</button>
-      </div>
+<!-- TICKER SUPERIOR -->
+<div class="ticker">
+    <div class="ticker-track">
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
     </div>
-
-    <!-- CARD 4: MERCADO LIVRE - TAXAS E ENTRADA -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fas fa-store"></i>
-        <h3>Mercado Livre</h3>
-      </div>
-      <div class="card-content">
-        <div class="image-wrapper">
-          <img src="https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Marketplace Mercado Livre" loading="lazy">
-        </div>
-        <p><strong>Entrada com produtos de giro rápido (curva A)</strong></p>
-        <ul class="bullet-list">
-          <li><i class="fas fa-percent"></i> <strong>Taxas 2026 (Categoria Móveis):</strong></li>
-          <li>Clássico: ~11,5% (sem parcelamento)</li>
-          <li>Premium: ~16,5% (até 12x sem juros) → maior exposição</li>
-          <li><i class="fas fa-truck"></i> Frete: utilize Mercado Envios (frete grátis opcional).</li>
-        </ul>
-        <div class="highlight">
-          <i class="fas fa-calculator"></i> <strong>Simulação (produto R$1.200):</strong> Comissão Premium ~R$198. Margem líquida deve considerar embalagem/logística.
-        </div>
-        <span class="tag">Reputação inicial</span>
-        <span class="tag">Envio Full</span>
-      </div>
-    </div>
-
-    <!-- CARD 5: SEO DOMINANTE (GOOGLE) -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fab fa-google"></i>
-        <h3>SEO 2026</h3>
-      </div>
-      <div class="card-content">
-        <div class="image-wrapper">
-          <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SEO - primeira página Google" loading="lazy">
-        </div>
-        <p><strong>Aparecer na 1ª página do Google (orgânico)</strong></p>
-        <ul class="bullet-list">
-          <li><i class="fas fa-key"></i> Palavras-chave: "móveis alto padrão Caxias", "sofá design RS", "mesa premium".</li>
-          <li><i class="fas fa-code"></i> SEO Técnico: Core Web Vitals, dados estruturados (schema produto).</li>
-          <li><i class="fas fa-pen-nib"></i> Conteúdo: blog com guias, tendências e projetos.</li>
-          <li><i class="fas fa-link"></i> Link building: parcerias com designers, portais de arquitetura.</li>
-        </ul>
-        <div class="highlight">
-          <i class="fas fa-map-location-dot"></i> <strong>Google Meu Negócio:</strong> fotos do showroom, posts semanais, avaliações 5★.
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 6: ATENDIMENTO IA + HUMANO -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fas fa-robot"></i>
-        <h3>Atendimento IA</h3>
-      </div>
-      <div class="card-content">
-        <div class="image-wrapper">
-          <img src="https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chatbot IA no WhatsApp" loading="lazy">
-        </div>
-        <p><strong>Agente de IA no WhatsApp (24/7)</strong></p>
-        <ul class="bullet-list">
-          <li><i class="fas fa-comment-dots"></i> Responde dúvidas sobre medidas, prazos, pagamentos.</li>
-          <li><i class="fas fa-calendar-check"></i> Agenda visitas e envia catálogo digital.</li>
-          <li><i class="fas fa-user-check"></i> Transfere para humano em vendas complexas.</li>
-        </ul>
-        <div class="highlight">
-          <i class="fas fa-clock"></i> Atendimento humanizado + IA reduz tempo de resposta em 30% e aumenta conversão.
-        </div>
-        <span class="tag">ManyChat / Zenvia</span>
-        <span class="tag">CRM integrado</span>
-      </div>
-    </div>
-
-    <!-- CARD 7: LOGÍSTICA NACIONAL -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fas fa-box-open"></i>
-        <h3>Entrega Premium</h3>
-      </div>
-      <div class="card-content">
-        <div class="image-wrapper">
-          <img src="https://images.pexels.com/photos/4246109/pexels-photo-4246109.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logística de móveis" loading="lazy">
-        </div>
-        <p><strong>Vender para todo Brasil sem loja física</strong></p>
-        <ul class="bullet-list">
-          <li><i class="fas fa-truck"></i> Transportadoras especializadas (Design Transportes, Azul Cargo).</li>
-          <li><i class="fas fa-shield"></i> Embalagem reforçada: cantoneiras, plástico bolha, caixas de madeira.</li>
-          <li><i class="fas fa-clipboard-list"></i> Rastreamento e seguro contra avarias.</li>
-        </ul>
-        <div class="highlight">
-          <i class="fas fa-gift"></i> Experiência "unboxing" de luxo: embalagem personalizada Mondez.
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 8: KPIS & METAS 2026 (double col) -->
-    <div class="card double-col">
-      <div class="card-header">
-        <i class="fas fa-chart-pie"></i>
-        <h3>KPIs & Metas 2026</h3>
-      </div>
-      <div class="card-content">
-        <div class="metric-row">
-          <div class="metric-card">
-            <div class="metric-value">30%</div>
-            <div>Aumento de leads via tráfego orgânico (SEO)</div>
-            <i class="fas fa-arrow-up" style="color:#2e7d32;"></i>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">15%</div>
-            <div>Conversão Mercado Livre (Premium)</div>
-            <i class="fas fa-arrow-up" style="color:#2e7d32;"></i>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">80+</div>
-            <div>Palavras-chave na 1ª página do Google</div>
-            <i class="fas fa-magnifying-glass"></i>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">4.8★</div>
-            <div>Reputação no Mercado Livre</div>
-            <i class="fas fa-star" style="color:#f1c40f;"></i>
-          </div>
-        </div>
-        <hr>
-        <div class="roadmap-step">
-          <span class="step-box"><i class="fas fa-calendar"></i> Mês 1-2: Novo site/catálogo + SEO on-page</span>
-          <i class="fas fa-arrow-right arrow-icon"></i>
-          <span class="step-box"><i class="fas fa-calendar"></i> Mês 3: Ativação Mercado Livre (anúncios Clássico)</span>
-          <i class="fas fa-arrow-right arrow-icon"></i>
-          <span class="step-box"><i class="fas fa-calendar"></i> Mês 4: Agente IA WhatsApp</span>
-          <i class="fas fa-arrow-right arrow-icon"></i>
-          <span class="step-box"><i class="fas fa-calendar"></i> Mês 6: Escala Premium + remarketing</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 9: CONCORRÊNCIA & DIFERENCIAIS -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fas fa-search"></i>
-        <h3>Posicionamento</h3>
-      </div>
-      <div class="card-content">
-        <div class="image-wrapper">
-          <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Diferencial competitivo" loading="lazy">
-        </div>
-        <p><strong>Concorrentes locais:</strong> Movelaria, Casa Provença. Diferencial Mondez: curadoria + 20 anos + atendimento humanizado.</p>
-        <p><strong>Mercado Livre:</strong> focar em design autoral, fugir da guerra de preços.</p>
-        <span class="tag">Sofás orgânicos</span>
-        <span class="tag">Mesas esculturais</span>
-      </div>
-    </div>
-  </div><!-- FIM GRID -->
-
-  <!-- SEÇÃO DETALHADA: PIXEL DO FACEBOOK (PARA QUE SERVE) + GOOGLE SHOPPING -->
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 30px;">
-    <!-- PIXEL DO FACEBOOK -->
-    <div style="flex: 2; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02); border: 1px solid #EBE7E2;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
-        <i class="fab fa-meta" style="font-size: 2.4rem; color: #A77B55;"></i>
-        <h3 style="margin-bottom: 0;">Meta Pixel: O que é e para que serve</h3>
-      </div>
-      <div class="image-wrapper" style="margin-bottom: 16px;">
-        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pixel do Facebook" loading="lazy">
-      </div>
-      <p style="margin-bottom: 16px;">O Pixel da Meta é um código que conecta seu site ao Facebook/Instagram, permitindo rastrear as ações dos visitantes e otimizar campanhas.</p>
-      <ul class="bullet-list">
-        <li><i class="fas fa-crosshairs"></i> <strong>Remarketing:</strong> Impactar quem já visitou seu site com anúncios personalizados.</li>
-        <li><i class="fas fa-users-cog"></i> <strong>Públicos Semelhantes:</strong> Alcançar novas pessoas com perfil similar aos seus melhores clientes.</li>
-        <li><i class="fas fa-chart-bar"></i> <strong>Medição de Conversões:</strong> Saber exatamente quantas vendas/leads vieram dos anúncios.</li>
-        <li><i class="fas fa-cart-shopping"></i> <strong>Otimização de Campanhas:</strong> O algoritmo da Meta usa os dados para exibir anúncios para quem tem maior probabilidade de comprar.</li>
-      </ul>
-      <div class="highlight">
-        <i class="fas fa-lightbulb"></i> <strong>Importante:</strong> O pixel coleta eventos como "ViewContent" (visualização de produto) e "Purchase" (compra), essenciais para medir o ROI e criar públicos personalizados.
-      </div>
-      <span class="tag">Meta Business Suite</span>
-      <span class="tag">Eventos Padrão</span>
-      <span class="tag">API de Conversões</span>
-    </div>
-
-    <!-- GOOGLE SHOPPING -->
-    <div style="flex: 3; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02); border: 1px solid #EBE7E2;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
-        <i class="fab fa-google" style="font-size: 2.4rem; color: #A77B55;"></i>
-        <h3 style="margin-bottom: 0;">Google Shopping: Anuncie seus produtos no Google</h3>
-      </div>
-      <div class="image-wrapper" style="margin-bottom: 16px;">
-        <img src="https://images.pexels.com/photos/1280638/pexels-photo-1280638.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Google Shopping" loading="lazy">
-      </div>
-      <p style="margin-bottom: 12px;">O Google Shopping exibe seus produtos diretamente nos resultados de busca, com imagem, preço e avaliação, capturando clientes com alta intenção de compra.</p>
-      <ul class="bullet-list">
-        <li><i class="fas fa-tag"></i> <strong>Feed de Produtos:</strong> Envie informações completas (título, descrição, preço, disponibilidade) para o Google Merchant Center.</li>
-        <li><i class="fas fa-arrow-trend-up"></i> <strong>Campanhas Performance Max:</strong> Utilize a IA do Google para exibir seus produtos em múltiplos canais (Shopping, YouTube, Gmail).</li>
-        <li><i class="fas fa-mobile-alt"></i> <strong>Mobile First:</strong> Otimize imagens e títulos para telas pequenas, onde a maioria das buscas acontece.</li>
-        <li><i class="fas fa-chart-line"></i> <strong>ROI Positivo:</strong> Campanhas bem estruturadas costumam ter um retorno sobre investimento (ROAS) superior a 400%.</li>
-      </ul>
-      <div class="highlight">
-        <i class="fas fa-calculator"></i> <strong>Dado:</strong> O Google Shopping representa até 85% do investimento em anúncios de varejo, com CPC médio de R$ 0,98 para a categoria móveis (2026).
-      </div>
-      <button class="btn-dummy"><i class="fas fa-store"></i> Exemplo: Integrar feed de produtos automaticamente via Shopify/Nuvemshop</button>
-    </div>
-  </div>
-
-  <!-- SEÇÃO: MARKETING DE CONTEÚDO + VENDA CONSULTIVA -->
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 30px;">
-    <!-- MARKETING DE CONTEÚDO -->
-    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
-        <i class="fas fa-newspaper" style="font-size: 2.4rem; color: #A77B55;"></i>
-        <h3 style="margin-bottom: 0;">Marketing de Conteúdo: Blog e SEO</h3>
-      </div>
-      <div class="image-wrapper" style="margin-bottom: 16px;">
-        <img src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog de conteúdo" loading="lazy">
-      </div>
-      <p><strong>Atrair clientes com conteúdo de valor</strong></p>
-      <ul class="bullet-list">
-        <li><i class="fas fa-pen-fancy"></i> <strong>Blog no site:</strong> Publique guias de decoração, tendências (curvas orgânicas, tons terrosos), cuidados com móveis e cases de projetos.</li>
-        <li><i class="fas fa-search"></i> <strong>SEO para blog:</strong> Foco em palavras-chave de cauda longa como "como escolher sofá de alto padrão" e "tendências de design 2026".</li>
-        <li><i class="fas fa-hashtag"></i> <strong>Redes Sociais:</strong> Transforme os artigos em carrosséis para Instagram e vídeos curtos para Reels/TikTok.</li>
-        <li><i class="fas fa-envelope"></i> <strong>Newsletter:</strong> Envie conteúdo exclusivo para sua base de clientes e leads.</li>
-      </ul>
-      <div class="highlight">
-        <i class="fas fa-chart-pie"></i> Empresas que mantêm blog ativo geram 67% mais leads por mês do que as que não possuem (HubSpot 2026).
-      </div>
-      <span class="tag">Blog Mondez</span>
-      <span class="tag">Calendário Editorial</span>
-    </div>
-
-    <!-- VENDA CONSULTIVA -->
-    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
-        <i class="fas fa-hand-holding-heart" style="font-size: 2.4rem; color: #A77B55;"></i>
-        <h3 style="margin-bottom: 0;">Venda Consultiva: Soluções Completas</h3>
-      </div>
-      <div class="image-wrapper" style="margin-bottom: 16px;">
-        <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Venda consultiva" loading="lazy">
-      </div>
-      <p><strong>Posicione a Mondez como consultora de estilo de vida</strong></p>
-      <ul class="bullet-list">
-        <li><i class="fas fa-couch"></i> <strong>Venda soluções completas:</strong> Ofereça combos de sofá + mesa de centro + poltrona, criando projetos harmonizados.</li>
-        <li><i class="fas fa-paint-brush"></i> <strong>Curadoria personalizada:</strong> Designers da Mondez ajudam o cliente a escolher as peças ideais para seu espaço e estilo.</li>
-        <li><i class="fas fa-ruler-combined"></i> <strong>Projetos 3D:</strong> Envie renderizações dos móveis no ambiente do cliente para aumentar a confiança na compra.</li>
-        <li><i class="fas fa-tags"></i> <strong>Pacotes para arquitetos:</strong> Condições especiais para profissionais que especificarem Mondez em seus projetos.</li>
-      </ul>
-      <div class="highlight">
-        <i class="fas fa-dollar-sign"></i> A venda consultiva aumenta o ticket médio em até 40% e reduz a taxa de devolução, pois o cliente compra com mais segurança.
-      </div>
-      <span class="tag">Projetos 3D</span>
-      <span class="tag">Consultoria Online</span>
-    </div>
-  </div>
-
-  <!-- PROGRAMA DE FIDELIDADE + POSICIONAMENTO MERCADO LIVRE -->
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 30px;">
-    <!-- PROGRAMA DE FIDELIDADE -->
-    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
-        <i class="fas fa-crown" style="font-size: 2.4rem; color: #A77B55;"></i>
-        <h3 style="margin-bottom: 0;">Programa de Fidelidade para Profissionais</h3>
-      </div>
-      <div class="image-wrapper" style="margin-bottom: 16px;">
-        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Programa de fidelidade" loading="lazy">
-      </div>
-      <p><strong>Fidelize arquitetos, designers e lojistas</strong></p>
-      <ul class="bullet-list">
-        <li><i class="fas fa-gem"></i> <strong>Clube de Benefícios:</strong> Descontos progressivos, acesso antecipado a lançamentos e frete grátis para compras recorrentes.</li>
-        <li><i class="fas fa-graduation-cap"></i> <strong>Capacitação:</strong> Workshops online sobre tendências de design e uso dos produtos Mondez.</li>
-        <li><i class="fas fa-gift"></i> <strong>Recompensas:</strong> Acumule pontos a cada projeto que especificar Mondez e troque por produtos ou viagens.</li>
-        <li><i class="fas fa-star"></i> <strong>Selo "Parceiro Mondez":</strong> Destaque os profissionais em seu site e redes sociais.</li>
-      </ul>
-      <div class="highlight">
-        <i class="fas fa-users"></i> Programas de fidelidade B2B aumentam a recorrência de compra em até 30% e fortalecem o relacionamento com especificadores.
-      </div>
-      <span class="tag">Arquitetos</span>
-      <span class="tag">Designers</span>
-      <span class="tag">Lojistas</span>
-    </div>
-
-    <!-- POSICIONAMENTO MERCADO LIVRE -->
-    <div style="flex: 1; min-width: 280px; background: #FFFFFF; border-radius: 36px; padding: 28px; box-shadow: 0 10px 24px rgba(0,0,0,0.02);">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;">
-        <i class="fas fa-medal" style="font-size: 2.4rem; color: #A77B55;"></i>
-        <h3 style="margin-bottom: 0;">Como se Destacar no Mercado Livre</h3>
-      </div>
-      <div class="image-wrapper" style="margin-bottom: 16px;">
-        <img src="https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Posicionamento Mercado Livre" loading="lazy">
-      </div>
-      <p><strong>Estratégias para reputação e vendas</strong></p>
-      <ul class="bullet-list">
-        <li><i class="fas fa-star"></i> <strong>Reputação verde:</strong> Envie rápido, responda dúvidas em até 1 hora e evite cancelamentos.</li>
-        <li><i class="fas fa-image"></i> <strong>Fotos profissionais:</strong> Invista em imagens de alta qualidade, com fundo neutro e diferentes ângulos.</li>
-        <li><i class="fas fa-tags"></i> <strong>Preço competitivo + frete grátis:</strong> Ofereça frete grátis (Mercado Envios) para produtos acima de R$79.</li>
-        <li><i class="fas fa-chart-line"></i> <strong>Anúncios Premium:</strong> Para itens de maior margem, utilize anúncios Premium para parcelamento e destaque.</li>
-        <li><i class="fas fa-bullhorn"></i> <strong>Campanhas de Produto Patrocinado:</strong> Invista em publicidade dentro da plataforma para aparecer nas primeiras posições.</li>
-      </ul>
-      <div class="highlight">
-        <i class="fas fa-trophy"></i> Vendedores com reputação verde têm taxa de conversão até 2,5x maior do que os de reputação amarela ou vermelha.
-      </div>
-      <span class="tag">Mercado Envios</span>
-      <span class="tag">Full</span>
-    </div>
-  </div>
-
-  <!-- BANNER FINAL: CATÁLOGO ESTRATÉGICO -->
-  <div style="margin-top: 36px; background: #1E1D1B; color: #F2EDE7; border-radius: 42px; padding: 30px 32px;">
-    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-      <i class="fas fa-layer-group" style="font-size: 3.2rem;"></i>
-      <div>
-        <h3 style="color: white; font-size: 2rem; font-weight: 500;">Catálogo Digital: a vitrine que vende</h3>
-        <p style="opacity: 0.9; margin-top: 8px;">Todos os produtos fotografados em alta resolução, com medidas e variações. Versão online (flipbook) enviada pelo WhatsApp e integrada ao site. Incluir QR code na loja física para capturar leads.</p>
-      </div>
-    </div>
-    <hr style="background: #5E5B56; margin: 22px 0 12px;">
-    <div style="display: flex; gap: 24px; flex-wrap: wrap;">
-      <div><i class="fas fa-check"></i> Fotos 360°</div>
-      <div><i class="fas fa-check"></i> Preços visíveis</div>
-      <div><i class="fas fa-check"></i> Integração com WhatsApp</div>
-      <div><i class="fas fa-check"></i> SEO-friendly</div>
-    </div>
-  </div>
-
-  <div class="footer-note">
-    <i class="far fa-copy"></i> Estratégia desenvolvida para Mondez Móveis • Dados atualizados 2026 (IEMI, Mercado Livre, Meta, Google) • Atendimento humanizado + inovação.
-  </div>
 </div>
+<div class="ticker ticker-reverse">
+    <div class="ticker-track">
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
+    </div>
+</div>
+
+<!-- SEÇÃO: O MÉTODO -->
+<section class="section section-bg">
+    <div class="badge-top scroll-bottom">MÉTODO TRIPLE 1</div>
+    <h2 class="section-title gradient-text scroll-bottom">A partir de hoje, a única coisa que você precisa para um ensaio fotográfico profissional é a fórmula que batizei de Método Triple 1.</h2>
+    <p class="section-sub scroll-bottom">Você só precisa de <b>1 foto</b> sua, <b>1 referência</b> de estilo e <b>1 ferramenta de IA</b> gratuita para gerar dezenas de imagens profissionais. Sem fotógrafo, sem estúdio e sem gastar um único centavo na ferramenta.</p>
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'%3E%3Cpath d='M400,50 L450,200 L350,200 Z' fill='%230838F2'/%3E%3C/svg%3E" style="width:100px;margin:20px auto;opacity:.7" alt="seta">
+</section>
+
+<!-- CARROSSEL DE FOTOS -->
+<div class="image-carousel section" style="padding-top:0">
+    <div class="swiper carousel-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%231A38FB'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white' font-size='20'%3EFOTO 1%3C/text%3E%3C/svg%3E" alt="foto"></div>
+            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%234586FF'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 2%3C/text%3E%3C/svg%3E" alt="foto"></div>
+            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%231AFB65'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 3%3C/text%3E%3C/svg%3E" alt="foto"></div>
+            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%23FF6B6B'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 4%3C/text%3E%3C/svg%3E" alt="foto"></div>
+            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%23FFB347'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 5%3C/text%3E%3C/svg%3E" alt="foto"></div>
+            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%23A855F7'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 6%3C/text%3E%3C/svg%3E" alt="foto"></div>
+        </div>
+        <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+    </div>
+</div>
+
+<!-- SEÇÃO ANTES/DEPOIS -->
+<section class="section">
+    <div class="badge-top scroll-bottom">VEJA VOCÊ MESMO</div>
+    <h2 class="section-title gradient-text scroll-bottom">Não é mágica, é o Método Triple 1: Veja a transformação de uma selfie comum em um ensaio de capa de revista.</h2>
+    
+    <div class="compare-grid">
+        <div class="compare-card scroll-bottom">
+            <div class="twentytwenty-container" data-offset="0.3">
+                <img class="twentytwenty-before" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23333'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EANTES%3C/text%3E%3C/svg%3E" alt="antes">
+                <img class="twentytwenty-after" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%231A38FB'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EDEPOIS%3C/text%3E%3C/svg%3E" alt="depois">
+                <div class="twentytwenty-before-label" data-content="Antes"></div>
+                <div class="twentytwenty-after-label" data-content="Depois"></div>
+                <div class="twentytwenty-handle"><span class="twentytwenty-left-arrow"></span><span class="twentytwenty-right-arrow"></span></div>
+            </div>
+        </div>
+        <div class="compare-card scroll-bottom">
+            <div class="twentytwenty-container" data-offset="0.3">
+                <img class="twentytwenty-before" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23333'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EANTES%3C/text%3E%3C/svg%3E" alt="antes">
+                <img class="twentytwenty-after" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%234586FF'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EDEPOIS%3C/text%3E%3C/svg%3E" alt="depois">
+                <div class="twentytwenty-before-label" data-content="Antes"></div>
+                <div class="twentytwenty-after-label" data-content="Depois"></div>
+                <div class="twentytwenty-handle"><span class="twentytwenty-left-arrow"></span><span class="twentytwenty-right-arrow"></span></div>
+            </div>
+        </div>
+        <div class="compare-card scroll-bottom">
+            <div class="twentytwenty-container" data-offset="0.3">
+                <img class="twentytwenty-before" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23333'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EANTES%3C/text%3E%3C/svg%3E" alt="antes">
+                <img class="twentytwenty-after" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%231AFB65'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EDEPOIS%3C/text%3E%3C/svg%3E" alt="depois">
+                <div class="twentytwenty-before-label" data-content="Antes"></div>
+                <div class="twentytwenty-after-label" data-content="Depois"></div>
+                <div class="twentytwenty-handle"><span class="twentytwenty-left-arrow"></span><span class="twentytwenty-right-arrow"></span></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn-glow" style="margin-top:40px"><a href="#price">EU QUERO TER ACESSO AGORA</a></div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="section">
+    <div class="badge-top scroll-bottom">PRINCIPAIS BENEFÍCIOS</div>
+    <h2 class="section-title gradient-text scroll-bottom">Veja os 4 resultados que você alcançará em menos de 3 horas de treino:</h2>
+    
+    <div class="benefits-grid">
+        <div class="benefit-card scroll-bottom">
+            <div class="line-blue"></div>
+            <img class="benefit-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231A38FB'/%3E%3C/svg%3E" alt="icon">
+            <h3 class="benefit-title">Ensaio Fotográfico Profissional Ilimitado</h3>
+            <p class="benefit-desc">Você será capaz de gerar dezenas de imagens com alta qualidade, no estilo que quiser e no cenário que sua imaginação mandar.</p>
+        </div>
+        <div class="benefit-card scroll-bottom">
+            <div class="line-blue"></div>
+            <img class="benefit-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%234586FF'/%3E%3C/svg%3E" alt="icon">
+            <h3 class="benefit-title">Fim do Desperdício de Tempo e Dinheiro</h3>
+            <p class="benefit-desc">Pare de perder horas procurando em bancos de imagens genéricos ou gastando fortunas em sessões de fotos. A ferramenta é 100% gratuita.</p>
+        </div>
+        <div class="benefit-card scroll-bottom">
+            <div class="line-blue"></div>
+            <img class="benefit-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231AFB65'/%3E%3C/svg%3E" alt="icon">
+            <h3 class="benefit-title">Potencialize a Venda do Seu Serviço</h3>
+            <p class="benefit-desc">Sua credibilidade e a dos seus clientes aumentam drasticamente. Use fotos exclusivas e personalizadas para criar conteúdos e anúncios muito mais criativos.</p>
+        </div>
+        <div class="benefit-card scroll-bottom">
+            <div class="line-blue"></div>
+            <img class="benefit-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFB347'/%3E%3C/svg%3E" alt="icon">
+            <h3 class="benefit-title">Nova Fonte de Renda Extra</h3>
+            <p class="benefit-desc">Você terá uma nova habilidade de mercado super valorizada. Se você já vende Landing Pages, essa é a oportunidade perfeita para um upsell de alto valor agregado.</p>
+        </div>
+    </div>
+    
+    <div class="btn-glow"><a href="#price">EU QUERO TER ACESSO AGORA</a></div>
+</section>
+
+<!-- O QUE VOCÊ VAI APRENDER -->
+<section class="section section-bg">
+    <div class="badge-top scroll-bottom">DOMINE O MÉTODO TRIPLE 1</div>
+    <h2 class="section-title gradient-text scroll-bottom">O que você vai aprender</h2>
+    <p class="section-sub scroll-bottom">O Método Triple 1 é um treinamento rápido e direto ao ponto, dividido em etapas simples para que você comece a criar suas imagens ainda hoje.</p>
+    
+    <div class="benefits-grid">
+        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">A Estrutura Triple 1 Desvendada</h3><p class="benefit-desc">Entenda o conceito por trás do nome e aprenda a usar a fórmula de 1 foto, 1 referência e 1 IA.</p></div>
+        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Seleção e Otimização da Sua Foto Base</h3><p class="benefit-desc">Escolhendo a melhor foto sua para alimentar a IA. Esse é o segredo para garantir que as imagens geradas realmente pareçam com você.</p></div>
+        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Entendendo a Ferramenta Gratuita</h3><p class="benefit-desc">Onde encontrar e como configurar a ferramenta de IA 100% gratuita.</p></div>
+        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Geração de Bons Prompts</h3><p class="benefit-desc">Aprenda o vocabulário correto para conversar com a IA e controlar iluminação, cenário, roupa e emoção.</p></div>
+        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Dominando Estilos e Referências</h3><p class="benefit-desc">Use referências visuais para guiar a IA e criar estilos fotográficos únicos.</p></div>
+        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Workflow Rápido</h3><p class="benefit-desc">Demonstração prática do fluxo completo: de uma ideia a uma imagem profissional pronta.</p></div>
+        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">O Ensaio na Prática com uma Expert</h3><p class="benefit-desc">Assista a um ensaio completo do zero ao resultado, garantindo que o método funcione com qualquer pessoa.</p></div>
+        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Prompts (Copiar e Colar)</h3><p class="benefit-desc">Mostro exatamente onde você pode buscar e copiar prompts testados e validados.</p></div>
+    </div>
+    
+    <div class="btn-glow"><a href="#price">EU QUERO TER ACESSO AGORA</a></div>
+</section>
+
+<!-- PREÇO -->
+<section id="price" class="section">
+    <div class="price-card scroll-bottom">
+        <div class="line-blue" style="margin:0 auto 20px"></div>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30'%3E%3Ctext x='50%25' y='20' text-anchor='middle' fill='white' font-size='14'%3EM%C3%89TODO TRIPLE 1%3C/text%3E%3C/svg%3E" style="width:200px;margin:0 auto 20px" alt="logo">
+        <p style="font-size:13px;color:#ccc">O valor real e justo do Método Triple 1 é de <strong>R$ <del>297,00</del></strong></p>
+        <p style="font-size:13px;color:#ccc">Mas, para celebrar o lançamento, você não vai pagar R$ <del>297,00</del></p>
+        <p>Se você agir <strong>AGORA</strong>, terá acesso completo e imediato por:</p>
+        <p class="price-old">De R$ 197,00</p>
+        <p class="price-new">12x R$ 14,00</p>
+        <p>ou R$ 127 à vista</p>
+        <div class="btn-glow" style="margin:30px auto"><a href="#">EU QUERO TER ACESSO AGORA</a></div>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 60'%3E%3Crect width='400' height='60' fill='none' stroke='%23aaa' stroke-width='1'/%3E%3C/svg%3E" style="width:250px;margin:20px auto;opacity:.3" alt="pagamento">
+        <p><strong>Acesso imediato após a compra</strong></p>
+        <p style="font-size:12px">Assim que o pagamento for confirmado (via Pix ou cartão), você receberá seu acesso via email.</p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+    <div class="faq-grid">
+        <div class="faq-info scroll-left">
+            <div class="badge-top">PERGUNTAS MAIS FREQUENTES</div>
+            <h2 class="gradient-text" style="font-size:41px;margin:20px 0">Ainda com Dúvida?</h2>
+            <div style="background:#fff;border-radius:12px;padding:20px;margin-top:20px">
+                <p><i class="fab fa-whatsapp" style="font-size:40px;color:#0838F2"></i></p>
+                <p><strong>ATENDIMENTO POR WHATSAPP</strong><br>Clique para enviar</p>
+            </div>
+            <div style="background:#fff;border-radius:12px;padding:20px;margin-top:15px">
+                <p><i class="fas fa-envelope" style="font-size:40px;color:#0838F2"></i></p>
+                <p><strong>ATENDIMENTO POR E-MAIL</strong><br>suporte@metodo.com</p>
+            </div>
+        </div>
+        <div class="faq-list scroll-right">
+            <div class="faq-item"><div class="faq-question">O Método Triple 1 funciona para quem não tem nenhuma experiência com IA? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Sim, funciona perfeitamente! O treinamento é prático e direto ao ponto, pensado para que até um iniciante consiga gerar suas primeiras fotos profissionais em minutos.</div></div>
+            <div class="faq-item"><div class="faq-question">Eu preciso pagar alguma coisa para usar a IA ensinada no método? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Não. A ferramenta de IA que ensinamos é 100% gratuita. O único investimento é no método.</div></div>
+            <div class="faq-item"><div class="faq-question">O conteúdo é apenas sobre geração de fotos? Eu não vendo Landing Pages? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">O foco principal são fotos de alta qualidade, mas você pode usar esse conhecimento para criar Hero Sections de Landing Pages que vendem.</div></div>
+            <div class="faq-item"><div class="faq-question">O Método Triple 1 é um curso ou uma mentoria? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">É um Treinamento Express focado em execução rápida, com aulas gravadas e sem enrolação.</div></div>
+            <div class="faq-item"><div class="faq-question">Qual a qualidade das fotos geradas? Posso usar em anúncios? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Sim! As fotos são de alta resolução e podem ser usadas para posts, anúncios, Landing Pages etc.</div></div>
+            <div class="faq-item"><div class="faq-question">Quanto tempo preciso dedicar para começar a gerar fotos? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Você consegue assistir ao conteúdo principal e aplicar a fórmula em menos de uma hora. Sua primeira foto pode sair em 30 minutos.</div></div>
+            <div class="faq-item"><div class="faq-question">Eu tenho alguma garantia ao comprar o método? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Sim! Garantia incondicional de 7 dias. Se não funcionar, devolvemos 100% do seu dinheiro.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 30'%3E%3Ctext x='0' y='20' fill='white' font-size='14'%3EM%C3%89TODO TRIPLE 1%3C/text%3E%3C/svg%3E" alt="logo"></div>
+        <div class="footer-copyright">Matheus Medeiros © Copyright 2026. Todos os direitos reservados. Este site não faz parte do site do FACEBOOK, META ou META Inc.</div>
+        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i> Ir para o topo</a>
+    </div>
+</footer>
+
+<script>
+    // ========== SCROLL ANIMATION ==========
+    const animElements = document.querySelectorAll('.scroll-bottom, .scroll-left, .scroll-right');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) entry.target.classList.add('ativado');
+        });
+    }, {threshold:0.2, rootMargin:'0px 0px -50px 0px'});
+    animElements.forEach(el => observer.observe(el));
+    
+    // ========== TWENTY TWENTY (COMPARADOR) ==========
+    document.querySelectorAll('.twentytwenty-container').forEach(container => {
+        const before = container.querySelector('.twentytwenty-before');
+        const after = container.querySelector('.twentytwenty-after');
+        const handle = container.querySelector('.twentytwenty-handle');
+        let offset = parseFloat(container.dataset.offset) || 0.5;
+        let isDragging = false;
+        
+        function setPosition(x) {
+            const rect = container.getBoundingClientRect();
+            let pos = (x - rect.left) / rect.width;
+            pos = Math.min(Math.max(pos, 0), 1);
+            before.style.clip = `rect(0, ${pos * rect.width}px, ${rect.height}px, 0)`;
+            handle.style.left = `${pos * rect.width}px`;
+        }
+        
+        function initPosition() {
+            const rect = container.getBoundingClientRect();
+            before.style.clip = `rect(0, ${offset * rect.width}px, ${rect.height}px, 0)`;
+            handle.style.left = `${offset * rect.width}px`;
+        }
+        
+        container.addEventListener('mousemove', (e) => { if(isDragging) setPosition(e.clientX); });
+        container.addEventListener('mousedown', () => isDragging = true);
+        window.addEventListener('mouseup', () => isDragging = false);
+        container.addEventListener('click', (e) => setPosition(e.clientX));
+        window.addEventListener('resize', initPosition);
+        initPosition();
+    });
+    
+    // ========== SWIPER CARROSSEL ==========
+    new Swiper('.carousel-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        loop: true,
+        speed: 2000,
+        autoplay: { delay: 0, disableOnInteraction: false },
+        freeMode: true,
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        breakpoints: { 320: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 5 } }
+    });
+    
+    // ========== FAQ TOGGLE ==========
+    document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+            const item = q.closest('.faq-item');
+            item.classList.toggle('active');
+        });
+    });
+    
+    // ========== SCROLL SUAVE ==========
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+    
+    // ========== CURSOR PERSONALIZADO ==========
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorRing = document.querySelector('.cursor-ring');
+    if(window.innerWidth >= 1024) {
+        document.addEventListener('mousemove', (e) => {
+            cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            cursorRing.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+    }
+    
+    // ========== HEADER SCROLL EFFECT ==========
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        if(window.scrollY > 50) header.style.background = 'rgba(2,9,19,.95)';
+        else header.style.background = 'rgba(2,9,19,.8)';
+    });
+</script>
 </body>
 </html>
