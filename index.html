@@ -1,466 +1,649 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="lenis">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Método Triple 1 - Ensaio Fotográfico com IA Gratuita</title>
-    <meta name="description" content="Crie seu próprio ensaio fotográfico profissional com uma IA Gratuita. Em menos de 30 minutos.">
+    <title>Método Triple 1 - Matheus Medeiros</title>
+    <meta name="description" content="Crie seu próprio ensaio fotográfico profissional com uma IA Gratuita. Em menos de 30 minutos, sem contratar ninguém e usando apenas UMA ferramenta de Inteligência Artificial que é 100% gratuita.">
+    <link rel="canonical" href="https://matheuslp.com.br/mt1/">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
-        /* ========== RESET ========== */
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{background:#020913;color:#fff;font-family:'Clash Display',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:1rem;line-height:1.5;overflow-x:hidden}
-        h1,h2,h3{font-family:'Clash Display',sans-serif;font-weight:600;line-height:1.2}
-        p{margin-bottom:.9rem}
-        a{color:#3E9ED8;text-decoration:none}
-        img{max-width:100%;height:auto;display:block}
-        button{cursor:pointer;background:transparent;border:none}
+        /* ===== RESET CSS (original) ===== */
+        html{line-height:1.15;-webkit-text-size-adjust:100%}*,:after,:before{box-sizing:border-box}
+        body{background-color:#fff;color:#333;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;margin:0;-webkit-font-smoothing:antialiased}
+        h1,h2,h3,h4,h5,h6{color:inherit;font-family:inherit;font-weight:500;line-height:1.2;margin-block-end:1rem;margin-block-start:.5rem}
+        h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.75rem}
+        p{margin-block-end:.9rem;margin-block-start:0}
+        a{background-color:transparent;color:#c36;text-decoration:none}
+        img{border-style:none;height:auto;max-width:100%}
+        button,input,optgroup,select,textarea{font-family:inherit;font-size:1rem;line-height:1.5;margin:0}
+        button,select{text-transform:none}[type=button],[type=submit],button{-webkit-appearance:button;background-color:transparent;border:1px solid #c36;border-radius:3px;color:#c36;display:inline-block;font-size:1rem;font-weight:400;padding:.5rem 1rem;text-align:center;transition:all .3s;cursor:pointer}
+        [type=button]:hover,[type=submit]:hover,button:hover{background-color:#c36;color:#fff}
         
-        /* ========== SCROLLBAR ========== */
+        /* ===== RESET PERSONALIZADO ===== */
+        body,html{overflow-x:hidden!important}
+        @media (max-width:786px){body,html{overflow-x:hidden!important}}
+        
+        /* ===== ANIMAÇÕES SCROLL ===== */
+        .scroll-bottom{opacity:0;filter:blur(10px);transition:.5s all;transform:translate3d(0,30px,0)}
+        .scroll-left{opacity:0;filter:blur(10px);transition:.5s all;transform:translate3d(-30px,0,0)}
+        .scroll-right{opacity:0;filter:blur(10px);transition:.5s all;transform:translate3d(30px,0,0)}
+        .scroll-top{opacity:0;filter:blur(10px);transition:.5s all;transform:translate3d(0,-30px,0)}
+        .ativado{opacity:1;filter:blur(0);transform:translate3d(0,0,0)}
+        
+        /* ===== HEADER STICKY ===== */
+        .elementor-sticky--active{z-index:99}
+        .elementor-animation-float{transition-duration:.3s;transition-property:transform;transition-timing-function:ease-out}
+        .elementor-animation-float:active,.elementor-animation-float:focus,.elementor-animation-float:hover{transform:translateY(-8px)}
+        
+        /* ===== CURSOR PERSONALIZADO ===== */
+        @media only screen and (min-width:600px){
+            .cursor-inner{position:fixed;width:8px;height:8px;border-radius:50%;background-color:#fff;pointer-events:none;z-index:9999999999999999;transform:translate(-50%,-50%)}
+            .cursor-outer{position:fixed;width:40px;height:40px;border:2px solid #0838F2;border-radius:50%;pointer-events:none;z-index:9999999999999999;transform:translate(-50%,-50%)}
+        }
+        
+        /* ===== TICKER ===== */
+        .texto{display:inline-block;color:#F7F8FC;font-family:'Clash Display',sans-serif;font-size:30px;font-weight:400;padding-right:20px;animation:carrossel 8s linear infinite}
+        @keyframes carrossel{0%{transform:translatex(0)}100%{transform:translatex(-100%)}}
+        
+        /* ===== BOTÃO COM BRILHO ===== */
+        .btn .elementor-button{background:linear-gradient(90deg,#1A38FB 0%,#4586FF 100%);box-shadow:0 -27px 80px rgba(26,56,251,.22),0 -9.855px 29.201px rgba(26,56,251,.15);overflow:hidden;transition:.5s all}
+        .btn:hover .elementor-button{background:linear-gradient(90deg,#1AFB65 0%,#0DD0C6 100%)}
+        .btn .elementor-button::before{content:'';background:linear-gradient(10deg,#D1D2EA 12.81%,transparent 66.66%);width:90px;height:160%;position:absolute;transform:translateX(-50%) skew(-25deg);bottom:0;pointer-events:none;animation:shinery 3s infinite ease-in-out;filter:blur(4px)}
+        @keyframes shinery{0%,100%{left:-10%;opacity:0}20%{opacity:1}48%{left:110%;opacity:1}51%{opacity:0}}
+        .btn .elementor-button::after{content:'';width:calc(100% + 6px);height:calc(100% + 6px);border-radius:inherit;border:5px solid rgba(173,173,173,.25);position:absolute;top:-3px;left:-3px;pointer-events:none}
+        
+        /* ===== BACKGROUNDS ===== */
+        .bg-hero{background-color:#020913;background-image:url('https://matheuslp.com.br/wp-content/uploads/2025/10/BG-DESKTOP-METODO-TRIPLE-1.webp');background-position:top center;background-repeat:no-repeat;background-size:cover}
+        .bg-section{background-color:#020913;background-image:url('https://matheuslp.com.br/wp-content/uploads/2025/10/BG-QUADRADO-LAURA.webp');background-position:center center;background-repeat:no-repeat;background-size:cover}
+        .bg-price{background-color:#020913;background-image:url('https://matheuslp.com.br/wp-content/uploads/2025/10/BG-PRECO-TRIPLE.webp');background-position:center center;background-repeat:no-repeat;background-size:cover}
+        .bg-card{background-color:#0C1018D1;background-image:url('https://matheuslp.com.br/wp-content/uploads/2025/10/BG-TRIPLE-1.webp');background-position:bottom center;background-repeat:no-repeat}
+        
+        /* ===== GRADIENTE TEXTO ===== */
+        .gradient-white{background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text;color:transparent!important}
+        
+        /* ===== HEADER ===== */
+        .header-sticky{background:rgba(2,9,19,.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(8,56,242,.5);position:sticky;top:0;z-index:900}
+        
+        /* ===== RESPONSIVO ===== */
+        @media(max-width:1024px){.bg-hero{background-image:url('https://matheuslp.com.br/wp-content/uploads/2025/10/BG-TABLET-METODO-TRIPLE-1.webp')}}
+        @media(max-width:767px){.bg-hero{background-image:url('https://matheuslp.com.br/wp-content/uploads/2025/10/BG-MOBILE-METODO-TRIPLE-1.webp')}}
+        
+        /* ===== SCROLLBAR ===== */
         body::-webkit-scrollbar{width:9px}
         body::-webkit-scrollbar-track{background:#020913}
-        body::-webkit-scrollbar-thumb{background:#0838F2;border-radius:0}
-        
-        /* ========== ANIMAÇÕES DE SCROLL ========== */
-        .scroll-bottom{opacity:0;filter:blur(10px);transition:.5s all;transform:translateY(30px)}
-        .scroll-left{opacity:0;filter:blur(10px);transition:.5s all;transform:translateX(-30px)}
-        .scroll-right{opacity:0;filter:blur(10px);transition:.5s all;transform:translateX(30px)}
-        .ativado{opacity:1;filter:blur(0);transform:translate(0,0)}
-        
-        /* ========== GRADIENTES DE TEXTO ========== */
-        .gradient-text{background:linear-gradient(135deg,#F7F8FC 0%,#686B74 100%);background-clip:text;-webkit-background-clip:text;color:transparent!important}
-        
-        /* ========== BOTÃO COM BRILHO ========== */
-        .btn-glow{position:relative;display:inline-block;overflow:hidden;background:linear-gradient(90deg,#1A38FB,#4586FF);border-radius:10px;transition:.5s}
-        .btn-glow:hover{background:linear-gradient(90deg,#1AFB65,#0DD0C6)}
-        .btn-glow::before{content:'';position:absolute;top:0;left:-10%;width:90px;height:160%;background:linear-gradient(10deg,#D1D2EA 12.81%,transparent 66.66%);transform:skew(-25deg);filter:blur(4px);animation:shinery 3s infinite ease-in-out;pointer-events:none}
-        @keyframes shinery{0%,100%{left:-10%;opacity:0}20%{opacity:1}48%{left:110%;opacity:1}51%{opacity:0}}
-        .btn-glow::after{content:'';position:absolute;top:-3px;left:-3px;right:-3px;bottom:-3px;border-radius:12px;border:1px solid rgba(173,173,173,.25);pointer-events:none}
-        .btn-glow a,.btn-glow button{display:block;padding:30px 80px;font-family:'Clash Display',sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;color:#fff;background:transparent;border:none;cursor:pointer}
-        @media(max-width:768px){.btn-glow a,.btn-glow button{padding:25px 20px;font-size:14px}}
-        
-        /* ========== HEADER STICKY COM BLUR ========== */
-        .header{position:sticky;top:0;z-index:900;background:rgba(2,9,19,.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(8,56,242,.5);padding:10px 20px}
-        .header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-        .logo img{width:180px}@media(max-width:768px){.logo img{width:120px}}
-        .nav-buttons{display:flex;gap:15px}
-        .btn-outline{background:rgba(255,255,255,.18);border:1px solid #666;border-radius:10px;padding:12px 25px;font-size:11px;font-weight:600;text-transform:uppercase;color:#fff;transition:.3s}
-        .btn-outline:hover{transform:translateY(-3px)}
-        .btn-primary{background:#3E9ED8;border-radius:10px;padding:12px 25px;font-size:11px;font-weight:600;text-transform:uppercase;color:#fff;transition:.3s}
-        .btn-primary:hover{background:#D0EBEB;color:#020913;transform:translateY(-3px)}
-        @media(max-width:768px){.btn-outline,.btn-primary{padding:10px 12px;font-size:9px}}
-        
-        /* ========== HERO ========== */
-        .hero{background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#020913"/><stop offset="100%" stop-color="#0a1a3a"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#g)"/><circle cx="20%" cy="30%" r="300" fill="#1A38FB" opacity="0.05"/><circle cx="80%" cy="70%" r="400" fill="#4586FF" opacity="0.05"/></svg>') no-repeat center/cover;padding:120px 20px}
-        .hero-container{max-width:1140px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:40px}
-        .hero-content{flex:1;text-align:left}
-        .hero-content h1{font-size:42px;margin-bottom:20px}@media(max-width:768px){.hero-content h1{font-size:32px;text-align:center}}
-        .hero-content p{font-size:16px;color:#ccc;margin-bottom:30px}
-        .hero-buttons{display:flex;flex-wrap:wrap;gap:20px;margin-top:20px}
-        .badge-img{margin-top:30px;opacity:.4;max-width:300px}
-        @media(max-width:768px){.hero-content,.hero-content h1,.hero-content p{text-align:center}.hero-buttons{justify-content:center}}
-        
-        /* ========== TICKER (carrossel de texto infinito) ========== */
-        .ticker{white-space:nowrap;padding:12px 0;background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border-top:1px solid #1A38FB;border-bottom:1px solid #1A38FB;transform:rotate(-2deg) scale(1.02);margin:0 -10px}
-        .ticker-track{display:inline-block;animation:ticker-scroll 12s linear infinite}
-        .ticker-item{display:inline-block;font-family:'Sora',sans-serif;font-size:18px;font-weight:600;letter-spacing:1px;color:#fff;padding-right:30px}
-        @keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-        .ticker-reverse{transform:rotate(2deg) scale(1.02);margin-top:-2px}
-        .ticker-reverse .ticker-track{animation-direction:reverse}
-        
-        /* ========== SEÇÕES GERAIS ========== */
-        .section{max-width:1280px;margin:0 auto;padding:80px 20px;text-align:center}
-        .section-bg{background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="100%" height="100%" fill="#0C1018"/><circle cx="50%" cy="50%" r="200" fill="#1A38FB" opacity="0.05"/></svg>') center/cover}
-        .section-title{font-size:45px;margin-bottom:20px}@media(max-width:768px){.section-title{font-size:32px}}
-        .section-sub{font-size:16px;color:#ccc;max-width:800px;margin:0 auto 40px}
-        .badge-top{display:inline-block;background:rgba(61,64,83,.44);border-radius:100px;padding:8px 24px;font-size:12px;text-transform:uppercase;margin-bottom:20px}
-        
-        /* ========== COMPARADOR DE IMAGENS (antes/depois) ========== */
-        .compare-grid{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin:40px 0}
-        .compare-card{flex:1;min-width:250px;background:rgba(12,16,24,0);border-radius:20px;padding:15px;transition:.3s}
-        .compare-card:hover{border:1px solid #232328}
-        .twentytwenty-container{position:relative;overflow:hidden;border-radius:20px;cursor:pointer}
-        .twentytwenty-container img{width:100%;display:block;position:absolute;top:0;left:0}
-        .twentytwenty-before{position:relative;z-index:10}
-        .twentytwenty-after{position:absolute;z-index:5}
-        .twentytwenty-handle{position:absolute;left:50%;top:50%;width:40px;height:40px;margin-left:-20px;margin-top:-20px;border:2px solid #fff;border-radius:50%;background:transparent;z-index:40;cursor:pointer}
-        .twentytwenty-handle:before,.twentytwenty-handle:after{content:'';position:absolute;background:#fff;width:2px;height:30px;left:50%;margin-left:-1px}
-        .twentytwenty-handle:before{top:-30px}
-        .twentytwenty-handle:after{bottom:-30px}
-        .twentytwenty-left-arrow,.twentytwenty-right-arrow{position:absolute;top:50%;width:0;height:0;border:6px solid transparent}
-        .twentytwenty-left-arrow{border-right-color:#fff;left:10px;margin-top:-6px}
-        .twentytwenty-right-arrow{border-left-color:#fff;right:10px;margin-top:-6px}
-        .twentytwenty-before-label,.twentytwenty-after-label{position:absolute;top:20px;background:rgba(26,56,251,.7);padding:5px 15px;border-radius:20px;font-size:12px;color:#fff;z-index:30}
-        .twentytwenty-before-label{left:20px}
-        .twentytwenty-after-label{right:20px}
-        
-        /* ========== CARROSSEL DE IMAGENS ========== */
-        .image-carousel{overflow:visible;position:relative;padding:20px 0}
-        .swiper{overflow:visible!important}
-        .swiper-wrapper{display:flex;transition-timing-function:linear!important}
-        .swiper-slide{width:300px;flex-shrink:0}
-        .swiper-slide img{width:100%;border-radius:0;transition:.3s}
-        .swiper-button-next,.swiper-button-prev{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;background:rgba(0,0,0,.5);border-radius:50%;color:#fff;z-index:100;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px}
-        .swiper-button-prev{left:20px}
-        .swiper-button-next{right:20px}
-        @media(max-width:768px){.swiper-button-prev{left:5px}.swiper-button-next{right:5px}}
-        
-        /* ========== CARDS DE BENEFÍCIOS ========== */
-        .benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin:50px 0}
-        .benefit-card{background:rgba(12,16,24,.82);border:1px solid #232328;border-radius:20px;padding:30px;text-align:left;transition:.3s}
-        .benefit-card:hover{transform:translateY(-5px)}
-        .benefit-icon{width:60px;margin-bottom:15px}
-        .benefit-title{font-size:18px;margin-bottom:10px;background:linear-gradient(135deg,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text;color:transparent}
-        .benefit-desc{font-size:14px;color:#ccc;line-height:1.4}
-        .line-blue{height:2px;background:#0838F2;box-shadow:0 10px 24px #0838F2;width:80px;margin-bottom:20px}
-        
-        /* ========== PREÇO ========== */
-        .price-card{background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border-radius:20px;border:1px solid rgba(255,255,255,.12);padding:50px;max-width:500px;margin:0 auto;text-align:center}
-        .price-old{font-size:14px;color:#aaa;text-decoration:line-through}
-        .price-new{font-size:70px;font-weight:700;margin:10px 0;background:linear-gradient(135deg,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text;color:transparent}
-        .price-installment{font-size:16px;color:#ccc}
-        
-        /* ========== FAQ (TOGGLE) ========== */
-        .faq-grid{display:flex;flex-wrap:wrap;gap:40px;margin-top:40px}
-        .faq-info{flex:1}
-        .faq-list{flex:2}
-        .faq-item{background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px}
-        .faq-question{padding:25px;font-size:16px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
-        .faq-question i{transition:.3s;color:#0838F2}
-        .faq-answer{padding:0 25px 25px;display:none;font-size:14px;color:#ccc;line-height:1.6}
-        .faq-item.active .faq-answer{display:block}
-        .faq-item.active .faq-question i{transform:rotate(90deg)}
-        
-        /* ========== RODAPÉ ========== */
-        .footer{background:#020913;padding:40px 20px;border-top:1px solid rgba(255,255,255,.1);margin-top:60px}
-        .footer-inner{max-width:1140px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
-        .footer-logo img{width:150px}
-        .footer-copyright{font-size:11px;color:#ABABAB}
-        .back-to-top{color:#fff;font-size:12px;font-weight:600;text-transform:uppercase;display:flex;align-items:center;gap:5px}
-        @media(max-width:768px){.footer-inner{flex-direction:column;text-align:center}}
-        
-        /* ========== CURSOR PERSONALIZADO ========== */
-        .cursor-dot,.cursor-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);display:none}
-        @media(min-width:1024px){.cursor-dot{display:block;width:6px;height:6px;background:#fff}.cursor-ring{display:block;width:40px;height:40px;border:2px solid #0838F2;transition:.1s}}
-        
-        /* ========== RESPONSIVO ========== */
-        @media(max-width:768px){.section{padding:50px 16px}.benefits-grid{grid-template-columns:1fr}.price-card{padding:30px 20px}}
+        body::-webkit-scrollbar-thumb{background-color:#0838F2;border-radius:0}
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <style>
+        /* ===== ESTILOS ELEMENTOR (post-45489.css) ===== */
+        .elementor-45489 .elementor-element.elementor-element-2ef439f:not(.elementor-motion-effects-element-type-background),.elementor-45489 .elementor-element.elementor-element-2ef439f>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-color:#020913C9}
+        .elementor-45489 .elementor-element.elementor-element-2ef439f>.elementor-background-overlay{background-color:#FFF;opacity:0}
+        .elementor-45489 .elementor-element.elementor-element-2ef439f>.elementor-container{max-width:1280px}
+        .elementor-45489 .elementor-element.elementor-element-2ef439f{border-style:solid;border-width:0 0 1px;border-color:#FFFFFF20;padding:5px 0;z-index:900}
+        .elementor-45489 .elementor-element.elementor-element-0732c38 img{width:25%}
+        .elementor-45489 .elementor-element.elementor-element-da1fcc5 .elementor-button{background-color:#FFFFFF2E;font-family:'Clash Display',sans-serif;font-size:11px;font-weight:600;text-transform:uppercase;color:#FFF;border:1px solid #666;border-radius:10px;padding:15px 30px}
+        .elementor-45489 .elementor-element.elementor-element-1b0d93c .elementor-button{background-color:#3E9ED8;font-family:'Clash Display',sans-serif;font-size:11px;font-weight:600;text-transform:uppercase;color:#FFF;border-radius:10px;padding:15px}
+        .elementor-45489 .elementor-element.elementor-element-73668fb:not(.elementor-motion-effects-element-type-background){background-color:#020913;background-image:url('https://matheuslp.com.br/wp-content/uploads/2025/10/BG-DESKTOP-METODO-TRIPLE-1.webp');background-position:top center;background-repeat:no-repeat;background-size:cover}
+        .elementor-45489 .elementor-element.elementor-element-73668fb{padding:120px 0}
+        .elementor-45489 .elementor-element.elementor-element-6322b7f .elementor-heading-title{font-family:'Clash Display',sans-serif;font-size:42px;font-weight:600;line-height:1.2em;color:#FFFFFF00;background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text}
+        .elementor-45489 .elementor-element.elementor-element-8afc5b9{font-family:'Clash Display',sans-serif;font-size:15px;color:#FFF}
+        .elementor-45489 .elementor-element.elementor-element-1cfa478 .elementor-button{background-color:#06F6B9;font-family:'Clash Display',sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;color:#FFF;border-radius:10px;padding:30px 80px}
+        .elementor-45489 .elementor-element.elementor-element-e83d01c:not(.elementor-motion-effects-element-type-background){background-color:#FEDB0700}
+        .elementor-45489 .elementor-element.elementor-element-e83d01c{border-style:solid;border-width:1px 0;border-color:#1A38FB;padding:5px 0;z-index:2;transform:rotate(-4deg) scale(1.02);white-space:nowrap;background:rgba(255,255,255,.05);backdrop-filter:blur(20px)}
+        .elementor-45489 .elementor-element.elementor-element-023471d .elementor-heading-title{font-family:'Sora',sans-serif;font-size:18px;font-weight:600;letter-spacing:1px;color:#FFF}
+        .elementor-45489 .elementor-element.elementor-element-9766cca:not(.elementor-motion-effects-element-type-background){background:linear-gradient(143deg,#1A38FB 0%,#4586FF 100%);margin-top:-80px;padding:5px 0;z-index:1;transform:rotate(4deg) scale(1.02);white-space:nowrap}
+        .elementor-45489 .elementor-element.elementor-element-ca828a6 .elementor-heading-title{font-family:'Clash Display',sans-serif;font-size:40px;font-weight:600;line-height:1.2em;color:#FFFFFF00;background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text}
+        .elementor-45489 .elementor-element.elementor-element-08c0554 .elementor-heading-title{font-family:'Clash Display',sans-serif;font-size:45px;font-weight:600;line-height:1.2em;color:#FFFFFF00;background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text}
+        .elementor-45489 .elementor-element.elementor-element-ce3489a .elementor-heading-title{font-family:'Clash Display',sans-serif;font-size:45px;font-weight:600;line-height:1.2em;color:#FFFFFF00;background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text}
+        .elementor-45489 .elementor-element.elementor-element-7d53667 .elementor-heading-title{font-family:'Clash Display',sans-serif;font-size:45px;font-weight:600;line-height:1.2em;color:#FFFFFF00;background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text}
+        .elementor-45489 .elementor-element.elementor-element-f48721d .elementor-heading-title{font-family:'Clash Display',sans-serif;font-size:45px;font-weight:600;line-height:1.2em;color:#FFFFFF00;background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text}
+        .elementor-45489 .elementor-element.elementor-element-ac1f179 .elementor-heading-title{font-family:'Clash Display',sans-serif;font-size:70px;font-weight:600;line-height:1.2em;color:#FFFFFF00;background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text}
+        .elementor-45489 .elementor-element.elementor-element-b351305 .elementor-heading-title{font-family:'Clash Display',sans-serif;font-size:41px;font-weight:600;line-height:1em;color:#FFFFFF00;background:linear-gradient(to right,#F7F8FC,#686B74);background-clip:text;-webkit-background-clip:text}
+        .elementor-45489 .elementor-element.elementor-element-d55cb47 .elementor-tab-title{border:1px solid #FFFFFF20;background:#0C1018;border-radius:10px;padding:30px}
+        .elementor-45489 .elementor-element.elementor-element-d55cb47 .elementor-tab-title a{color:#FFF}
+        .elementor-45489 .elementor-element.elementor-element-d55cb47 .elementor-tab-title.elementor-active a{color:#0838F2}
+        @media(max-width:1024px){.elementor-45489 .elementor-element.elementor-element-73668fb{padding:400px 0 80px}}
+        @media(max-width:767px){.elementor-45489 .elementor-element.elementor-element-6322b7f .elementor-heading-title{font-size:7vw}}
+    </style>
+    
+    <style>
+        /* ===== TWENTY TWENTY CSS (comparador de imagens) ===== */
+        .twentytwenty-horizontal .twentytwenty-handle:before,.twentytwenty-horizontal .twentytwenty-handle:after,.twentytwenty-vertical .twentytwenty-handle:before,.twentytwenty-vertical .twentytwenty-handle:after{content:" ";display:block;background:#fff;position:absolute;z-index:30;box-shadow:0 0 12px rgba(51,51,51,.5)}
+        .twentytwenty-horizontal .twentytwenty-handle:before,.twentytwenty-horizontal .twentytwenty-handle:after{width:2px;height:9999px;left:50%;margin-left:-1.5px}
+        .twentytwenty-before-label,.twentytwenty-after-label,.twentytwenty-overlay{position:absolute;top:0;width:100%;height:100%}
+        .twentytwenty-before-label:before,.twentytwenty-after-label:before{color:#fff;font-size:13px;letter-spacing:.1em;position:absolute;background:rgba(0,0,0,.3);line-height:38px;padding:0 20px}
+        .twentytwenty-horizontal .twentytwenty-before-label:before{left:0;border-radius:0 3px 3px 0}
+        .twentytwenty-horizontal .twentytwenty-after-label:before{right:0;border-radius:3px 0 0 3px}
+        .twentytwenty-left-arrow,.twentytwenty-right-arrow,.twentytwenty-up-arrow,.twentytwenty-down-arrow{width:0;height:0;border:6px inset transparent;position:absolute}
+        .twentytwenty-left-arrow,.twentytwenty-right-arrow{top:50%;margin-top:-6px}
+        .twentytwenty-left-arrow{border-right:6px solid #fff;left:50%;margin-left:-17px}
+        .twentytwenty-right-arrow{border-left:6px solid #fff;right:50%;margin-right:-17px}
+        .twentytwenty-container{box-sizing:content-box;z-index:0;overflow:hidden;position:relative;-webkit-user-select:none}
+        .twentytwenty-container img{max-width:100%;position:absolute;top:0;display:block}
+        .twentytwenty-before{z-index:20}
+        .twentytwenty-after{z-index:10}
+        .twentytwenty-handle{height:38px;width:38px;position:absolute;left:50%;top:50%;margin-left:-19px;margin-top:-19px;border:2px solid #fff;border-radius:1000px;box-shadow:0 0 12px rgba(51,51,51,.5);z-index:40;cursor:pointer}
+        .twentytwenty-before-label:before{content:attr(data-content)}
+        .twentytwenty-after-label:before{content:attr(data-content)}
+    </style>
+    
+    <style>
+        /* ===== SWIPER CSS ===== */
+        .swiper{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1}
+        .swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:flex;transition-property:transform;box-sizing:content-box}
+        .swiper-slide{flex-shrink:0;width:100%;height:100%;position:relative;transition-property:transform}
+        .swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:calc(44px/44*27);height:44px;margin-top:-22px;z-index:10;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}
+        .swiper-button-prev{left:10px;right:auto}
+        .swiper-button-next{right:10px;left:auto}
+        .swiper-pagination{position:absolute;text-align:center;transition:.3s opacity;transform:translate3d(0,0,0);z-index:10}
+    </style>
+    
+    <style>
+        /* ===== LENIS CSS (scroll suave) ===== */
+        html.lenis,html.lenis body{height:auto}
+        .lenis.lenis-smooth{scroll-behavior:auto!important}
+        .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+        .lenis.lenis-stopped{overflow:clip}
+        .lenis.lenis-smooth iframe{pointer-events:none}
+    </style>
 </head>
-<body>
-
-<!-- CUSTOM CURSOR -->
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-
-<!-- HEADER -->
-<header class="header">
-    <div class="header-inner">
-        <div class="logo">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 80'%3E%3Ctext x='0' y='50' font-family='Arial' font-size='40' fill='white' font-weight='bold'%3EM%C3%89TODO TRIPLE 1%3C/text%3E%3C/svg%3E" alt="Logo">
-        </div>
-        <div class="nav-buttons">
-            <a href="#faq" class="btn-outline"><i class="far fa-user"></i> SUPORTE</a>
-            <a href="#price" class="btn-primary">GARANTIR ACESSO</a>
-        </div>
-    </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-container">
-        <div class="hero-content scroll-bottom">
-            <h1 class="gradient-text">Crie seu próprio ensaio fotográfico profissional com uma IA Gratuita.</h1>
-            <p><strong>Em menos de 30 minutos,</strong> sem contratar ninguém e usando apenas UMA ferramenta de Inteligência Artificial que é 100% gratuita.</p>
-            <div class="hero-buttons">
-                <div class="btn-glow"><a href="#price">EU QUERO TER ACESSO AGORA</a></div>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-45489">
+    
+    <!-- CURSOR PERSONALIZADO -->
+    <div class="cursor-inner"></div>
+    <div class="cursor-outer"></div>
+    
+    <!-- HEADER -->
+    <div data-elementor-type="wp-page" data-elementor-id="45489">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-2ef439f elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-sticky elementor-sticky--active" data-id="2ef439f" style="position:sticky;top:0;z-index:900;background:rgba(2,9,19,.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(8,56,242,.5);padding:10px 20px">
+            <div class="elementor-container" style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap">
+                <div class="elementor-column elementor-col-33" style="width:70%">
+                    <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-0732c38">
+                            <img decoding="async" width="800" height="81" src="https://matheuslp.com.br/wp-content/uploads/2025/10/LOGO-METODO-02-1024x104.webp" style="width:25%" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33" style="width:15%">
+                    <div class="elementor-element elementor-element-da1fcc5">
+                        <a class="elementor-button elementor-button-link elementor-size-md elementor-animation-float" href="#suporte" style="display:inline-block;background:rgba(255,255,255,.18);border:1px solid #666;border-radius:10px;padding:12px 25px;font-size:11px;font-weight:600;text-transform:uppercase;color:#fff;transition:.3s">
+                            <i class="far fa-user"></i> SUPORTE
+                        </a>
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33" style="width:15%">
+                    <div class="elementor-element elementor-element-1b0d93c">
+                        <a class="elementor-button elementor-button-link elementor-size-md elementor-animation-float btn" href="https://pay.kiwify.com.br/G4pRCBN" style="display:inline-block;background:#3E9ED8;border-radius:10px;padding:12px 25px;font-size:11px;font-weight:600;text-transform:uppercase;color:#fff;transition:.3s">
+                            GARANTIR ACESSO
+                        </a>
+                    </div>
+                </div>
             </div>
-            <img class="badge-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 100'%3E%3Crect width='600' height='100' fill='none'/%3E%3C/svg%3E" alt="Selos">
-        </div>
-    </div>
-</section>
-
-<!-- TICKER SUPERIOR -->
-<div class="ticker">
-    <div class="ticker-track">
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-    </div>
-</div>
-<div class="ticker ticker-reverse">
-    <div class="ticker-track">
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-        <span class="ticker-item">MÉTODO TRIPLE 1</span><span class="ticker-item">⚡</span>
-    </div>
-</div>
-
-<!-- SEÇÃO: O MÉTODO -->
-<section class="section section-bg">
-    <div class="badge-top scroll-bottom">MÉTODO TRIPLE 1</div>
-    <h2 class="section-title gradient-text scroll-bottom">A partir de hoje, a única coisa que você precisa para um ensaio fotográfico profissional é a fórmula que batizei de Método Triple 1.</h2>
-    <p class="section-sub scroll-bottom">Você só precisa de <b>1 foto</b> sua, <b>1 referência</b> de estilo e <b>1 ferramenta de IA</b> gratuita para gerar dezenas de imagens profissionais. Sem fotógrafo, sem estúdio e sem gastar um único centavo na ferramenta.</p>
-    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'%3E%3Cpath d='M400,50 L450,200 L350,200 Z' fill='%230838F2'/%3E%3C/svg%3E" style="width:100px;margin:20px auto;opacity:.7" alt="seta">
-</section>
-
-<!-- CARROSSEL DE FOTOS -->
-<div class="image-carousel section" style="padding-top:0">
-    <div class="swiper carousel-swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%231A38FB'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white' font-size='20'%3EFOTO 1%3C/text%3E%3C/svg%3E" alt="foto"></div>
-            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%234586FF'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 2%3C/text%3E%3C/svg%3E" alt="foto"></div>
-            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%231AFB65'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 3%3C/text%3E%3C/svg%3E" alt="foto"></div>
-            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%23FF6B6B'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 4%3C/text%3E%3C/svg%3E" alt="foto"></div>
-            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%23FFB347'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 5%3C/text%3E%3C/svg%3E" alt="foto"></div>
-            <div class="swiper-slide"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Crect width='500' height='500' fill='%23A855F7'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EFOTO 6%3C/text%3E%3C/svg%3E" alt="foto"></div>
-        </div>
-        <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
-        <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
-    </div>
-</div>
-
-<!-- SEÇÃO ANTES/DEPOIS -->
-<section class="section">
-    <div class="badge-top scroll-bottom">VEJA VOCÊ MESMO</div>
-    <h2 class="section-title gradient-text scroll-bottom">Não é mágica, é o Método Triple 1: Veja a transformação de uma selfie comum em um ensaio de capa de revista.</h2>
-    
-    <div class="compare-grid">
-        <div class="compare-card scroll-bottom">
-            <div class="twentytwenty-container" data-offset="0.3">
-                <img class="twentytwenty-before" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23333'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EANTES%3C/text%3E%3C/svg%3E" alt="antes">
-                <img class="twentytwenty-after" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%231A38FB'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EDEPOIS%3C/text%3E%3C/svg%3E" alt="depois">
-                <div class="twentytwenty-before-label" data-content="Antes"></div>
-                <div class="twentytwenty-after-label" data-content="Depois"></div>
-                <div class="twentytwenty-handle"><span class="twentytwenty-left-arrow"></span><span class="twentytwenty-right-arrow"></span></div>
-            </div>
-        </div>
-        <div class="compare-card scroll-bottom">
-            <div class="twentytwenty-container" data-offset="0.3">
-                <img class="twentytwenty-before" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23333'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EANTES%3C/text%3E%3C/svg%3E" alt="antes">
-                <img class="twentytwenty-after" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%234586FF'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EDEPOIS%3C/text%3E%3C/svg%3E" alt="depois">
-                <div class="twentytwenty-before-label" data-content="Antes"></div>
-                <div class="twentytwenty-after-label" data-content="Depois"></div>
-                <div class="twentytwenty-handle"><span class="twentytwenty-left-arrow"></span><span class="twentytwenty-right-arrow"></span></div>
-            </div>
-        </div>
-        <div class="compare-card scroll-bottom">
-            <div class="twentytwenty-container" data-offset="0.3">
-                <img class="twentytwenty-before" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23333'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EANTES%3C/text%3E%3C/svg%3E" alt="antes">
-                <img class="twentytwenty-after" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%231AFB65'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' fill='white'%3EDEPOIS%3C/text%3E%3C/svg%3E" alt="depois">
-                <div class="twentytwenty-before-label" data-content="Antes"></div>
-                <div class="twentytwenty-after-label" data-content="Depois"></div>
-                <div class="twentytwenty-handle"><span class="twentytwenty-left-arrow"></span><span class="twentytwenty-right-arrow"></span></div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="btn-glow" style="margin-top:40px"><a href="#price">EU QUERO TER ACESSO AGORA</a></div>
-</section>
-
-<!-- BENEFÍCIOS -->
-<section class="section">
-    <div class="badge-top scroll-bottom">PRINCIPAIS BENEFÍCIOS</div>
-    <h2 class="section-title gradient-text scroll-bottom">Veja os 4 resultados que você alcançará em menos de 3 horas de treino:</h2>
-    
-    <div class="benefits-grid">
-        <div class="benefit-card scroll-bottom">
-            <div class="line-blue"></div>
-            <img class="benefit-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231A38FB'/%3E%3C/svg%3E" alt="icon">
-            <h3 class="benefit-title">Ensaio Fotográfico Profissional Ilimitado</h3>
-            <p class="benefit-desc">Você será capaz de gerar dezenas de imagens com alta qualidade, no estilo que quiser e no cenário que sua imaginação mandar.</p>
-        </div>
-        <div class="benefit-card scroll-bottom">
-            <div class="line-blue"></div>
-            <img class="benefit-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%234586FF'/%3E%3C/svg%3E" alt="icon">
-            <h3 class="benefit-title">Fim do Desperdício de Tempo e Dinheiro</h3>
-            <p class="benefit-desc">Pare de perder horas procurando em bancos de imagens genéricos ou gastando fortunas em sessões de fotos. A ferramenta é 100% gratuita.</p>
-        </div>
-        <div class="benefit-card scroll-bottom">
-            <div class="line-blue"></div>
-            <img class="benefit-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231AFB65'/%3E%3C/svg%3E" alt="icon">
-            <h3 class="benefit-title">Potencialize a Venda do Seu Serviço</h3>
-            <p class="benefit-desc">Sua credibilidade e a dos seus clientes aumentam drasticamente. Use fotos exclusivas e personalizadas para criar conteúdos e anúncios muito mais criativos.</p>
-        </div>
-        <div class="benefit-card scroll-bottom">
-            <div class="line-blue"></div>
-            <img class="benefit-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFB347'/%3E%3C/svg%3E" alt="icon">
-            <h3 class="benefit-title">Nova Fonte de Renda Extra</h3>
-            <p class="benefit-desc">Você terá uma nova habilidade de mercado super valorizada. Se você já vende Landing Pages, essa é a oportunidade perfeita para um upsell de alto valor agregado.</p>
-        </div>
-    </div>
-    
-    <div class="btn-glow"><a href="#price">EU QUERO TER ACESSO AGORA</a></div>
-</section>
-
-<!-- O QUE VOCÊ VAI APRENDER -->
-<section class="section section-bg">
-    <div class="badge-top scroll-bottom">DOMINE O MÉTODO TRIPLE 1</div>
-    <h2 class="section-title gradient-text scroll-bottom">O que você vai aprender</h2>
-    <p class="section-sub scroll-bottom">O Método Triple 1 é um treinamento rápido e direto ao ponto, dividido em etapas simples para que você comece a criar suas imagens ainda hoje.</p>
-    
-    <div class="benefits-grid">
-        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">A Estrutura Triple 1 Desvendada</h3><p class="benefit-desc">Entenda o conceito por trás do nome e aprenda a usar a fórmula de 1 foto, 1 referência e 1 IA.</p></div>
-        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Seleção e Otimização da Sua Foto Base</h3><p class="benefit-desc">Escolhendo a melhor foto sua para alimentar a IA. Esse é o segredo para garantir que as imagens geradas realmente pareçam com você.</p></div>
-        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Entendendo a Ferramenta Gratuita</h3><p class="benefit-desc">Onde encontrar e como configurar a ferramenta de IA 100% gratuita.</p></div>
-        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Geração de Bons Prompts</h3><p class="benefit-desc">Aprenda o vocabulário correto para conversar com a IA e controlar iluminação, cenário, roupa e emoção.</p></div>
-        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Dominando Estilos e Referências</h3><p class="benefit-desc">Use referências visuais para guiar a IA e criar estilos fotográficos únicos.</p></div>
-        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Workflow Rápido</h3><p class="benefit-desc">Demonstração prática do fluxo completo: de uma ideia a uma imagem profissional pronta.</p></div>
-        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">O Ensaio na Prática com uma Expert</h3><p class="benefit-desc">Assista a um ensaio completo do zero ao resultado, garantindo que o método funcione com qualquer pessoa.</p></div>
-        <div class="benefit-card scroll-bottom"><h3 class="benefit-title">Prompts (Copiar e Colar)</h3><p class="benefit-desc">Mostro exatamente onde você pode buscar e copiar prompts testados e validados.</p></div>
-    </div>
-    
-    <div class="btn-glow"><a href="#price">EU QUERO TER ACESSO AGORA</a></div>
-</section>
-
-<!-- PREÇO -->
-<section id="price" class="section">
-    <div class="price-card scroll-bottom">
-        <div class="line-blue" style="margin:0 auto 20px"></div>
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30'%3E%3Ctext x='50%25' y='20' text-anchor='middle' fill='white' font-size='14'%3EM%C3%89TODO TRIPLE 1%3C/text%3E%3C/svg%3E" style="width:200px;margin:0 auto 20px" alt="logo">
-        <p style="font-size:13px;color:#ccc">O valor real e justo do Método Triple 1 é de <strong>R$ <del>297,00</del></strong></p>
-        <p style="font-size:13px;color:#ccc">Mas, para celebrar o lançamento, você não vai pagar R$ <del>297,00</del></p>
-        <p>Se você agir <strong>AGORA</strong>, terá acesso completo e imediato por:</p>
-        <p class="price-old">De R$ 197,00</p>
-        <p class="price-new">12x R$ 14,00</p>
-        <p>ou R$ 127 à vista</p>
-        <div class="btn-glow" style="margin:30px auto"><a href="#">EU QUERO TER ACESSO AGORA</a></div>
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 60'%3E%3Crect width='400' height='60' fill='none' stroke='%23aaa' stroke-width='1'/%3E%3C/svg%3E" style="width:250px;margin:20px auto;opacity:.3" alt="pagamento">
-        <p><strong>Acesso imediato após a compra</strong></p>
-        <p style="font-size:12px">Assim que o pagamento for confirmado (via Pix ou cartão), você receberá seu acesso via email.</p>
-    </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="section">
-    <div class="faq-grid">
-        <div class="faq-info scroll-left">
-            <div class="badge-top">PERGUNTAS MAIS FREQUENTES</div>
-            <h2 class="gradient-text" style="font-size:41px;margin:20px 0">Ainda com Dúvida?</h2>
-            <div style="background:#fff;border-radius:12px;padding:20px;margin-top:20px">
-                <p><i class="fab fa-whatsapp" style="font-size:40px;color:#0838F2"></i></p>
-                <p><strong>ATENDIMENTO POR WHATSAPP</strong><br>Clique para enviar</p>
-            </div>
-            <div style="background:#fff;border-radius:12px;padding:20px;margin-top:15px">
-                <p><i class="fas fa-envelope" style="font-size:40px;color:#0838F2"></i></p>
-                <p><strong>ATENDIMENTO POR E-MAIL</strong><br>suporte@metodo.com</p>
-            </div>
-        </div>
-        <div class="faq-list scroll-right">
-            <div class="faq-item"><div class="faq-question">O Método Triple 1 funciona para quem não tem nenhuma experiência com IA? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Sim, funciona perfeitamente! O treinamento é prático e direto ao ponto, pensado para que até um iniciante consiga gerar suas primeiras fotos profissionais em minutos.</div></div>
-            <div class="faq-item"><div class="faq-question">Eu preciso pagar alguma coisa para usar a IA ensinada no método? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Não. A ferramenta de IA que ensinamos é 100% gratuita. O único investimento é no método.</div></div>
-            <div class="faq-item"><div class="faq-question">O conteúdo é apenas sobre geração de fotos? Eu não vendo Landing Pages? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">O foco principal são fotos de alta qualidade, mas você pode usar esse conhecimento para criar Hero Sections de Landing Pages que vendem.</div></div>
-            <div class="faq-item"><div class="faq-question">O Método Triple 1 é um curso ou uma mentoria? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">É um Treinamento Express focado em execução rápida, com aulas gravadas e sem enrolação.</div></div>
-            <div class="faq-item"><div class="faq-question">Qual a qualidade das fotos geradas? Posso usar em anúncios? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Sim! As fotos são de alta resolução e podem ser usadas para posts, anúncios, Landing Pages etc.</div></div>
-            <div class="faq-item"><div class="faq-question">Quanto tempo preciso dedicar para começar a gerar fotos? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Você consegue assistir ao conteúdo principal e aplicar a fórmula em menos de uma hora. Sua primeira foto pode sair em 30 minutos.</div></div>
-            <div class="faq-item"><div class="faq-question">Eu tenho alguma garantia ao comprar o método? <i class="fas fa-chevron-right"></i></div><div class="faq-answer">Sim! Garantia incondicional de 7 dias. Se não funcionar, devolvemos 100% do seu dinheiro.</div></div>
-        </div>
-    </div>
-</section>
-
-<!-- RODAPÉ -->
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-logo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 30'%3E%3Ctext x='0' y='20' fill='white' font-size='14'%3EM%C3%89TODO TRIPLE 1%3C/text%3E%3C/svg%3E" alt="logo"></div>
-        <div class="footer-copyright">Matheus Medeiros © Copyright 2026. Todos os direitos reservados. Este site não faz parte do site do FACEBOOK, META ou META Inc.</div>
-        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i> Ir para o topo</a>
-    </div>
-</footer>
-
-<script>
-    // ========== SCROLL ANIMATION ==========
-    const animElements = document.querySelectorAll('.scroll-bottom, .scroll-left, .scroll-right');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) entry.target.classList.add('ativado');
-        });
-    }, {threshold:0.2, rootMargin:'0px 0px -50px 0px'});
-    animElements.forEach(el => observer.observe(el));
-    
-    // ========== TWENTY TWENTY (COMPARADOR) ==========
-    document.querySelectorAll('.twentytwenty-container').forEach(container => {
-        const before = container.querySelector('.twentytwenty-before');
-        const after = container.querySelector('.twentytwenty-after');
-        const handle = container.querySelector('.twentytwenty-handle');
-        let offset = parseFloat(container.dataset.offset) || 0.5;
-        let isDragging = false;
+        </section>
         
-        function setPosition(x) {
-            const rect = container.getBoundingClientRect();
-            let pos = (x - rect.left) / rect.width;
-            pos = Math.min(Math.max(pos, 0), 1);
-            before.style.clip = `rect(0, ${pos * rect.width}px, ${rect.height}px, 0)`;
-            handle.style.left = `${pos * rect.width}px`;
+        <!-- HERO -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-73668fb bg-hero" style="padding:120px 20px">
+            <div class="elementor-container" style="max-width:1140px;margin:0 auto">
+                <div class="elementor-column elementor-col-50" style="width:45%">
+                    <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-6322b7f">
+                            <h1 class="elementor-heading-title gradient-white">Crie seu próprio ensaio fotográfico profissional com uma IA Gratuita.</h1>
+                        </div>
+                        <div class="elementor-element elementor-element-8afc5b9">
+                            <p><strong>Em menos de 30 minutos,</strong> sem contratar ninguém e usando apenas UMA ferramenta de Inteligência Artificial que é 100% gratuita.</p>
+                        </div>
+                        <div class="elementor-element elementor-element-1cfa478 btn">
+                            <a class="elementor-button elementor-button-link elementor-size-md elementor-animation-float" href="https://pay.kiwify.com.br/G4pRCBN" style="display:inline-block;padding:30px 80px;font-size:14px;font-weight:600;text-transform:uppercase;color:#fff;background:linear-gradient(90deg,#1A38FB,#4586FF);border-radius:10px;overflow:hidden;position:relative">
+                                EU QUERO TER ACESSO AGORA
+                            </a>
+                        </div>
+                        <div class="elementor-element elementor-element-5d34dfe">
+                            <img decoding="async" width="592" height="105" src="https://matheuslp.com.br/wp-content/uploads/2025/10/icons-kiwify.webp" style="width:368px;opacity:0.2;margin-top:30px" alt="Selos">
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-50" style="width:55%"></div>
+            </div>
+        </section>
+        
+        <!-- TICKER 1 -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-e83d01c" style="border-top:1px solid #1A38FB;border-bottom:1px solid #1A38FB;padding:5px 0;transform:rotate(-4deg) scale(1.02);background:rgba(255,255,255,.05);backdrop-filter:blur(20px);white-space:nowrap;overflow:hidden">
+            <div class="elementor-container">
+                <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-023471d">
+                        <div style="display:flex;animation:carrossel 12s linear infinite">
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TICKER 2 (reverse) -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-9766cca" style="margin-top:-80px;padding:5px 0;transform:rotate(4deg) scale(1.02);background:linear-gradient(143deg,#1A38FB,#4586FF);white-space:nowrap;overflow:hidden">
+            <div class="elementor-container">
+                <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-3073b1a">
+                        <div style="display:flex;animation:carrossel 12s linear infinite reverse">
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                            <h2 class="texto">MÉTODO TRIPLE 1</h2><h2 class="texto">⚡</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO O MÉTODO -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-ca378d5 bg-section" style="padding:40px 20px">
+            <div class="elementor-container" style="max-width:1140px;margin:0 auto">
+                <div class="elementor-column">
+                    <div class="elementor-widget-wrap">
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-044c70c">
+                            <div class="elementor-container">
+                                <div class="elementor-column elementor-element-fc6fe2a" style="background:#0C1018;border-radius:20px;padding:100px;text-align:center">
+                                    <div class="elementor-element elementor-element-ca828a6 scroll-bottom">
+                                        <h2 class="elementor-heading-title gradient-white">A partir de hoje, a única coisa que você precisa para um ensaio fotográfico profissional é a fórmula que batizei de Método Triple 1.</h2>
+                                    </div>
+                                    <div class="elementor-element elementor-element-ab62d93 scroll-bottom">
+                                        <p>Você só precisa de <b>1 foto</b> sua, <b>1 referência</b> de estilo e <b>1 ferramenta de IA</b> gratuita para gerar dezenas de imagens profissionais e de alta qualidade. Sem fotógrafo, sem estúdio e sem gastar um único centavo na ferramenta.</p>
+                                        <p>Um treinamento Express. Assista tudo em menos de 3 horas e saia praticando.</p>
+                                    </div>
+                                    <div class="elementor-element elementor-element-ee4c171">
+                                        <img decoding="async" width="799" height="308" src="https://matheuslp.com.br/wp-content/uploads/2025/10/arrow-triple-1.webp" style="width:9%;margin:-21px auto 0" alt="seta">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CARROSSEL DE IMAGENS -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-199e1ee" style="padding:0">
+            <div class="elementor-container">
+                <div class="elementor-column">
+                    <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-c9ebd51">
+                            <div class="swiper swiper-initialized" style="overflow:visible">
+                                <div class="swiper-wrapper" style="display:flex;transition-timing-function:linear">
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-TRIPLE-01.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-TRIPLE-03.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-02.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-TRIPLE-04.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-01.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-TRIPLE-02.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-07.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-TRIPLE-05.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-04.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-06.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-TRIPLE-06.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-08.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-03.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-05.webp" style="width:100%"></div>
+                                    <div class="swiper-slide"><img src="https://matheuslp.com.br/wp-content/uploads/2025/10/CARROSSEL-TRIPLE-09.webp" style="width:100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO ANTES/DEPOIS -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-b224336 bg-section" style="padding:100px 20px">
+            <div class="elementor-container" style="max-width:1280px;margin:0 auto;text-align:center">
+                <div class="elementor-element elementor-element-3940d63"><span style="background:#3D405370;border-radius:100px;padding:8px 24px;font-size:12px;text-transform:uppercase">VEJA VOCÊ MESMO</span></div>
+                <div class="elementor-element elementor-element-08c0554"><h2 class="gradient-white" style="font-size:45px">Não é mágica, é o Método Triple 1: Veja a transformação de uma selfie comum em um ensaio de capa de revista.</h2></div>
+                <div class="elementor-element elementor-element-96ee9f4"><p>O <b>Método Triple 1</b> usa o poder da IA para pegar a sua <i>selfie</i> e transformá-la em dezenas de cenários e estilos, sem que você precise sequer mudar de roupa.</p></div>
+                
+                <div class="compare-grid" style="display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin:40px 0">
+                    <div class="twentytwenty-container" style="position:relative;width:300px;overflow:hidden;border-radius:20px">
+                        <img class="twentytwenty-before" src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-MATHEUS-ANTES-.webp" style="width:100%;display:block;position:relative;z-index:10">
+                        <img class="twentytwenty-after" src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-MATHEUS-DEPOIS-01.webp" style="width:100%;display:block;position:absolute;top:0;left:0;z-index:5">
+                        <div class="twentytwenty-before-label" style="position:absolute;top:20px;left:20px;background:rgba(26,56,251,.7);padding:5px 15px;border-radius:20px;font-size:12px;color:#fff;z-index:30">Antes</div>
+                        <div class="twentytwenty-after-label" style="position:absolute;top:20px;right:20px;background:rgba(26,56,251,.7);padding:5px 15px;border-radius:20px;font-size:12px;color:#fff;z-index:30">Depois</div>
+                        <div class="twentytwenty-handle" style="position:absolute;left:50%;top:50%;width:40px;height:40px;margin-left:-20px;margin-top:-20px;border:2px solid #fff;border-radius:50%;z-index:40;cursor:pointer">
+                            <span class="twentytwenty-left-arrow" style="position:absolute;top:50%;left:10px;width:0;height:0;border:6px solid transparent;border-right-color:#fff;margin-top:-6px"></span>
+                            <span class="twentytwenty-right-arrow" style="position:absolute;top:50%;right:10px;width:0;height:0;border:6px solid transparent;border-left-color:#fff;margin-top:-6px"></span>
+                        </div>
+                    </div>
+                    <div class="twentytwenty-container" style="position:relative;width:300px;overflow:hidden;border-radius:20px">
+                        <img class="twentytwenty-before" src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-MATHEUS-ANTES-.webp" style="width:100%;display:block;position:relative;z-index:10">
+                        <img class="twentytwenty-after" src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-MATHEUS-DEPOIS-02.webp" style="width:100%;display:block;position:absolute;top:0;left:0;z-index:5">
+                        <div class="twentytwenty-before-label" style="position:absolute;top:20px;left:20px;background:rgba(26,56,251,.7);padding:5px 15px;border-radius:20px;font-size:12px;color:#fff;z-index:30">Antes</div>
+                        <div class="twentytwenty-after-label" style="position:absolute;top:20px;right:20px;background:rgba(26,56,251,.7);padding:5px 15px;border-radius:20px;font-size:12px;color:#fff;z-index:30">Depois</div>
+                        <div class="twentytwenty-handle" style="position:absolute;left:50%;top:50%;width:40px;height:40px;margin-left:-20px;margin-top:-20px;border:2px solid #fff;border-radius:50%;z-index:40;cursor:pointer">
+                            <span class="twentytwenty-left-arrow"></span>
+                            <span class="twentytwenty-right-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="twentytwenty-container" style="position:relative;width:300px;overflow:hidden;border-radius:20px">
+                        <img class="twentytwenty-before" src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-MATHEUS-ANTES-.webp" style="width:100%;display:block;position:relative;z-index:10">
+                        <img class="twentytwenty-after" src="https://matheuslp.com.br/wp-content/uploads/2025/10/FOTO-MATHEUS-DEPOIS-03.webp" style="width:100%;display:block;position:absolute;top:0;left:0;z-index:5">
+                        <div class="twentytwenty-before-label" style="position:absolute;top:20px;left:20px;background:rgba(26,56,251,.7);padding:5px 15px;border-radius:20px;font-size:12px;color:#fff;z-index:30">Antes</div>
+                        <div class="twentytwenty-after-label" style="position:absolute;top:20px;right:20px;background:rgba(26,56,251,.7);padding:5px 15px;border-radius:20px;font-size:12px;color:#fff;z-index:30">Depois</div>
+                        <div class="twentytwenty-handle" style="position:absolute;left:50%;top:50%;width:40px;height:40px;margin-left:-20px;margin-top:-20px;border:2px solid #fff;border-radius:50%;z-index:40;cursor:pointer">
+                            <span class="twentytwenty-left-arrow"></span>
+                            <span class="twentytwenty-right-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn">
+                    <a class="elementor-button" href="https://pay.kiwify.com.br/G4pRCBN" style="display:inline-block;padding:30px 80px;background:linear-gradient(90deg,#1A38FB,#4586FF);border-radius:10px;color:#fff;font-weight:600;text-transform:uppercase">EU QUERO TER ACESSO AGORA</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- BENEFÍCIOS -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-0205712 bg-section" style="padding:100px 20px">
+            <div class="elementor-container" style="max-width:1280px;margin:0 auto;text-align:center">
+                <div class="elementor-element elementor-element-8f35883"><span style="background:#3D405370;border-radius:100px;padding:8px 24px;font-size:12px;text-transform:uppercase">PRINCIPAIS BENEFÍCIOS</span></div>
+                <div class="elementor-element elementor-element-ce3489a"><h2 class="gradient-white" style="font-size:45px">Veja os 4 resultados que você alcançará em menos de 3 horas de treino:</h2></div>
+                <div class="elementor-element elementor-element-28e284d"><p>O <b>Método Triple 1</b> não é apenas sobre fotos, é sobre ter o controle total da sua autoridade visual, economizando tempo e dinheiro.</p></div>
+                
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin:50px 0">
+                    <div style="background:#0C1018D1;border:1px solid #232328;border-radius:20px;padding:30px;text-align:left">
+                        <div style="height:2px;background:#0838F2;box-shadow:0 10px 24px #0838F2;width:80px;margin-bottom:20px"></div>
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/LAURA-ICON-03.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Ensaio Fotográfico Profissional Ilimitado</h3>
+                        <p style="font-size:14px;color:#ccc">Você será capaz de gerar dezenas de imagens com alta qualidade, no estilo que quiser e no cenário que sua imaginação mandar.</p>
+                    </div>
+                    <div style="background:#0C1018D1;border:1px solid #232328;border-radius:20px;padding:30px;text-align:left">
+                        <div style="height:2px;background:#0838F2;box-shadow:0 10px 24px #0838F2;width:80px;margin-bottom:20px"></div>
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-01.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Fim do Desperdício de Tempo e Dinheiro</h3>
+                        <p style="font-size:14px;color:#ccc">Pare de perder horas procurando em bancos de imagens genéricos ou gastando fortunas em sessões de fotos. A ferramenta é 100% gratuita.</p>
+                    </div>
+                    <div style="background:#0C1018D1;border:1px solid #232328;border-radius:20px;padding:30px;text-align:left">
+                        <div style="height:2px;background:#0838F2;box-shadow:0 10px 24px #0838F2;width:80px;margin-bottom:20px"></div>
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-02.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Potencialize a Venda do Seu Serviço</h3>
+                        <p style="font-size:14px;color:#ccc">Sua credibilidade e a dos seus clientes aumentam drasticamente. Use fotos exclusivas e personalizadas para criar conteúdos e anúncios muito mais criativos e impactantes.</p>
+                    </div>
+                    <div style="background:#0C1018D1;border:1px solid #232328;border-radius:20px;padding:30px;text-align:left">
+                        <div style="height:2px;background:#0838F2;box-shadow:0 10px 24px #0838F2;width:80px;margin-bottom:20px"></div>
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-03.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Nova Fonte de Renda Extra</h3>
+                        <p style="font-size:14px;color:#ccc">Você terá uma nova habilidade de mercado super valorizada. Se você já vende Landing Pages, essa é a oportunidade perfeita para um upsell de alto valor agregado e margem de lucro.</p>
+                    </div>
+                </div>
+                
+                <div class="btn">
+                    <a class="elementor-button" href="https://pay.kiwify.com.br/G4pRCBN" style="display:inline-block;padding:30px 80px;background:linear-gradient(90deg,#1A38FB,#4586FF);border-radius:10px;color:#fff;font-weight:600;text-transform:uppercase">EU QUERO TER ACESSO AGORA</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- O QUE VOCÊ VAI APRENDER -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-0534d0e bg-section" style="padding:100px 20px">
+            <div class="elementor-container" style="max-width:1280px;margin:0 auto;text-align:center">
+                <div class="elementor-element elementor-element-e3bc9a8"><span style="background:#3D405370;border-radius:100px;padding:8px 24px;font-size:12px;text-transform:uppercase">DOMINE O MÉTODO TRIPLE 1</span></div>
+                <div class="elementor-element elementor-element-7d53667"><h2 class="gradient-white" style="font-size:45px">O que você vai aprender</h2></div>
+                <div class="elementor-element elementor-element-d8847c8"><p>O <b>Método Triple 1</b> é um treinamento rápido e direto ao ponto, dividido em etapas simples para que você comece a criar suas imagens ainda hoje.</p></div>
+                <img decoding="async" width="503" height="768" src="https://matheuslp.com.br/wp-content/uploads/2025/10/LAURA-DETALHE-02.webp" style="width:8%;margin:20px auto" alt="Laura">
+                
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin:50px 0">
+                    <div style="background:#0C1018;border-radius:20px;padding:30px;text-align:left">
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-04.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">A Estrutura Triple 1 Desvendada</h3>
+                        <div style="height:1px;background:#0838F2;margin:15px 0"></div>
+                        <p style="font-size:14px;color:#ccc">Entenda o conceito por trás do nome e aprenda a usar a fórmula de <b>1 foto, 1 referência e 1 IA</b> para criar qualquer estilo de imagem que você imaginar.</p>
+                    </div>
+                    <div style="background:#0C1018;border-radius:20px;padding:30px;text-align:left">
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-05.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Seleção e Otimização da Sua Foto Base.</h3>
+                        <div style="height:1px;background:#0838F2;margin:15px 0"></div>
+                        <p style="font-size:14px;color:#ccc">Escolhendo a melhor foto sua para alimentar a IA e o que fazer para otimizá-la. Esse é o segredo para garantir que as imagens geradas realmente pareçam com você.</p>
+                    </div>
+                    <div style="background:#0C1018;border-radius:20px;padding:30px;text-align:left">
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-06.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Entendendo a Ferramenta Gratuita</h3>
+                        <div style="height:1px;background:#0838F2;margin:15px 0"></div>
+                        <p style="font-size:14px;color:#ccc">Onde encontrar e como configurar a ferramenta de Inteligência Artificial <b>100% gratuita</b>. Você não vai gastar nada.</p>
+                    </div>
+                    <div style="background:#0C1018;border-radius:20px;padding:30px;text-align:left">
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-07.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Geração de Bons Prompts</h3>
+                        <div style="height:1px;background:#0838F2;margin:15px 0"></div>
+                        <p style="font-size:14px;color:#ccc">Aprenda o vocabulário e a estrutura correta para "conversar" com a IA. Com o prompt certo, você controla iluminação, cenário, roupa e emoção.</p>
+                    </div>
+                    <div style="background:#0C1018;border-radius:20px;padding:30px;text-align:left">
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-08.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Dominando Estilos e Referências</h3>
+                        <div style="height:1px;background:#0838F2;margin:15px 0"></div>
+                        <p style="font-size:14px;color:#ccc">Como usar referências visuais de outros fotógrafos ou marcas (sem copiar, mas sim se inspirar) para guiar a IA e criar estilos fotográficos únicos.</p>
+                    </div>
+                    <div style="background:#0C1018;border-radius:20px;padding:30px;text-align:left">
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-09.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Workflow Rápido</h3>
+                        <div style="height:1px;background:#0838F2;margin:15px 0"></div>
+                        <p style="font-size:14px;color:#ccc">Demonstração prática do fluxo de trabalho completo. Em poucos minutos, você verá como transformar uma ideia em uma imagem profissional.</p>
+                    </div>
+                    <div style="background:#0C1018;border-radius:20px;padding:30px;text-align:left">
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-10.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">O Ensaio na Prática com uma Expert</h3>
+                        <div style="height:1px;background:#0838F2;margin:15px 0"></div>
+                        <p style="font-size:14px;color:#ccc">Assista a um <b>ensaio completo, do zero ao resultado</b>, usando a foto de uma <b>expert do mercado digital</b>.</p>
+                    </div>
+                    <div style="background:#0C1018;border-radius:20px;padding:30px;text-align:left">
+                        <img src="https://matheuslp.com.br/wp-content/uploads/2025/10/ICON-TRIPLE-11.webp" style="width:60px;margin-bottom:15px">
+                        <h3 class="gradient-white" style="font-size:18px">Prompts (Copiar e Colar)</h3>
+                        <div style="height:1px;background:#0838F2;margin:15px 0"></div>
+                        <p style="font-size:14px;color:#ccc">Mostro exatamente onde você pode buscar e <b>copiar prompts</b> testados e validados, que geram resultados incríveis.</p>
+                    </div>
+                </div>
+                
+                <div class="btn">
+                    <a class="elementor-button" href="https://pay.kiwify.com.br/G4pRCBN" style="display:inline-block;padding:30px 80px;background:linear-gradient(90deg,#1A38FB,#4586FF);border-radius:10px;color:#fff;font-weight:600;text-transform:uppercase">EU QUERO TER ACESSO AGORA</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PREÇO -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-1c79838 bg-price" style="padding:100px 20px">
+            <div class="elementor-container" style="max-width:1000px;margin:0 auto">
+                <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:center">
+                    <div style="flex:1">
+                        <div class="elementor-element elementor-element-f48721d"><h2 class="gradient-white" style="font-size:45px">Oferta Exclusiva de Lançamento!</h2></div>
+                        <div class="elementor-element elementor-element-89496ef"><p>Garanta o Método Triple 1 por um preço irrecusável e mude seu jogo visual hoje mesmo!</p><p>Por tempo limitado, você não vai pagar o preço que o mercado cobra por uma única foto profissional… Você investirá o valor de um lanche para ter fotos ilimitadas!</p></div>
+                    </div>
+                    <div style="flex:1;background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border-radius:20px;border:1px solid rgba(255,255,255,.12);padding:50px;text-align:center">
+                        <div style="height:2px;background:#0838F2;width:80px;margin:-62px auto 20px"></div>
+                        <img decoding="async" src="https://matheuslp.com.br/wp-content/uploads/2025/10/LOGO-METODO-02-1024x104.webp" style="width:70%;margin:0 auto 20px" alt="Logo">
+                        <p style="font-size:12px;color:#ccc">O valor real e justo do <b>Método Triple 1</b> é de <b>R$ <del>297,00</del></b></p>
+                        <p style="font-size:12px;color:#ccc">Mas, para celebrar o lançamento, você não vai pagar R$ <del>297,00</del></p>
+                        <p>Se você agir <b>AGORA</b>, terá acesso completo e imediato por:</p>
+                        <p style="font-size:14px;color:#ccc"><del>R$ 197,00</del> Por Apenas 12x</p>
+                        <h2 class="gradient-white" style="font-size:70px">R$ 14,00</h2>
+                        <p style="font-size:16px;color:#ccc">Ou R$ 127 à vista</p>
+                        <div class="btn" style="margin:30px 0">
+                            <a class="elementor-button" href="https://pay.kiwify.com.br/G4pRCBN" style="display:inline-block;padding:30px 60px;background:linear-gradient(90deg,#1A38FB,#4586FF);border-radius:10px;color:#fff;font-weight:600;text-transform:uppercase">EU QUERO TER ACESSO AGORA</a>
+                        </div>
+                        <img decoding="async" src="https://matheuslp.com.br/wp-content/uploads/2025/10/icons-kiwify.webp" style="width:76%;opacity:0.2;margin:20px auto" alt="Pagamento">
+                        <p><strong>Acesso imediato após a compra</strong></p>
+                        <p style="font-size:12px">Assim que o pagamento for confirmado (via Pix ou cartão), você receberá seu acesso via email pela plataforma Kiwify, e já começa a gerar suas fotos nos próximos minutos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section id="suporte" class="elementor-section elementor-top-section elementor-element elementor-element-0c1537c" style="background:#020913;padding:100px 20px">
+            <div class="elementor-container" style="max-width:1280px;margin:0 auto">
+                <div style="display:flex;flex-wrap:wrap;gap:40px">
+                    <div style="flex:1">
+                        <div class="elementor-element elementor-element-39bafd2"><span style="background:#1F1F29;border-radius:100px;padding:8px 24px;font-size:12px;text-transform:uppercase;color:#fff">PERGUNTAS MAIS FREQUENTES</span></div>
+                        <div class="elementor-element elementor-element-b351305"><h2 class="gradient-white" style="font-size:41px">Ainda com Dúvida?</h2></div>
+                        <div style="background:#fff;border-radius:12px;padding:20px;margin-top:20px;border:1px solid #CDCDCD">
+                            <i class="fab fa-whatsapp" style="font-size:60px;color:#0838F2"></i>
+                            <p><b>ATENDIMENTO POR WHATSAPP</b><br>Clique para enviar</p>
+                        </div>
+                        <div style="background:#fff;border-radius:12px;padding:20px;margin-top:15px;border:1px solid #CDCDCD">
+                            <i class="fas fa-envelope" style="font-size:60px;color:#0838F2"></i>
+                            <p><b>ATENDIMENTO POR E-MAIL</b><br>suporte@metodotriple1.com.br</p>
+                        </div>
+                    </div>
+                    <div style="flex:2">
+                        <div class="faq-item" style="background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px">
+                            <div class="faq-question" style="padding:30px;font-size:14px;font-weight:600;color:#fff;display:flex;justify-content:space-between;cursor:pointer">O Método Triple 1 funciona para quem não tem nenhuma experiência com IA? <i class="fas fa-chevron-right" style="color:#0838F2"></i></div>
+                            <div class="faq-answer" style="padding:0 30px 30px;display:none;font-size:14px;color:#ccc">Sim, funciona perfeitamente! O treinamento é um Treinamento Express Prático e direto ao ponto. Ele foi pensado para que mesmo um iniciante consiga seguir o passo a passo e gerar suas primeiras fotos profissionais em minutos.</div>
+                        </div>
+                        <div class="faq-item" style="background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px">
+                            <div class="faq-question" style="padding:30px;font-size:14px;font-weight:600;color:#fff;display:flex;justify-content:space-between;cursor:pointer">Eu preciso pagar alguma coisa para usar a IA ensinada no método? <i class="fas fa-chevron-right" style="color:#0838F2"></i></div>
+                            <div class="faq-answer" style="padding:0 30px 30px;display:none;font-size:14px;color:#ccc">Não. A ferramenta de Inteligência Artificial que ensinamos a configurar e usar é 100% gratuita. O único investimento que você fará é no Método Triple 1.</div>
+                        </div>
+                        <div class="faq-item" style="background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px">
+                            <div class="faq-question" style="padding:30px;font-size:14px;font-weight:600;color:#fff;display:flex;justify-content:space-between;cursor:pointer">O conteúdo é apenas sobre a geração de fotos? Eu não vendo Landing Pages? <i class="fas fa-chevron-right" style="color:#0838F2"></i></div>
+                            <div class="faq-answer" style="padding:0 30px 30px;display:none;font-size:14px;color:#ccc">O foco principal do Método Triple 1 é te dar fotos de alta qualidade e alta conversão. No entanto, você consegue usar esse conhecimento para criar uma Hero Section de uma Landing Page que vende.</div>
+                        </div>
+                        <div class="faq-item" style="background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px">
+                            <div class="faq-question" style="padding:30px;font-size:14px;font-weight:600;color:#fff;display:flex;justify-content:space-between;cursor:pointer">O Método Triple 1 é um curso ou uma mentoria? <i class="fas fa-chevron-right" style="color:#0838F2"></i></div>
+                            <div class="faq-answer" style="padding:0 30px 30px;display:none;font-size:14px;color:#ccc">O Método Triple 1 é um Treinamento Express focado em execução rápida. Ele contém aulas gravadas, claras e sem enrolação.</div>
+                        </div>
+                        <div class="faq-item" style="background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px">
+                            <div class="faq-question" style="padding:30px;font-size:14px;font-weight:600;color:#fff;display:flex;justify-content:space-between;cursor:pointer">Qual a qualidade das fotos geradas? Posso usar em anúncios ou na web? <i class="fas fa-chevron-right" style="color:#0838F2"></i></div>
+                            <div class="faq-answer" style="padding:0 30px 30px;display:none;font-size:14px;color:#ccc">Sim! As fotos geradas são de alta resolução e poderão ser usadas para a finalidade que preferir: Posts, Anúncios, Landing Pages…</div>
+                        </div>
+                        <div class="faq-item" style="background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px">
+                            <div class="faq-question" style="padding:30px;font-size:14px;font-weight:600;color:#fff;display:flex;justify-content:space-between;cursor:pointer">Quanto tempo eu preciso dedicar para terminar o curso e começar a gerar fotos? <i class="fas fa-chevron-right" style="color:#0838F2"></i></div>
+                            <div class="faq-answer" style="padding:0 30px 30px;display:none;font-size:14px;color:#ccc">Você consegue assistir ao conteúdo principal e aplicar a fórmula Triple 1 em menos de uma hora. Sua primeira foto profissional pode ser gerada em menos de 30 minutos.</div>
+                        </div>
+                        <div class="faq-item" style="background:#0C1018;border:1px solid rgba(255,255,255,.12);border-radius:12px;margin-bottom:15px">
+                            <div class="faq-question" style="padding:30px;font-size:14px;font-weight:600;color:#fff;display:flex;justify-content:space-between;cursor:pointer">Eu tenho alguma garantia ao comprar o método? <i class="fas fa-chevron-right" style="color:#0838F2"></i></div>
+                            <div class="faq-answer" style="padding:0 30px 30px;display:none;font-size:14px;color:#ccc">Com certeza. Você tem a Garantia Incondicional de 7 Dias. Se não conseguir gerar suas fotos profissionais, devolvemos 100% do seu dinheiro.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- RODAPÉ -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-bea63d9" style="background:#020913;padding:40px 20px">
+            <div class="elementor-container" style="max-width:1140px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center">
+                <div style="flex:1">
+                    <img decoding="async" src="https://matheuslp.com.br/wp-content/uploads/2025/10/LOGO-METODO-02-1024x104.webp" style="width:25%" alt="Logo">
+                    <p style="font-size:11px;color:#ABABAB">Matheus Medeiros © Copyright 2026. Todos os direitos reservados. Este site não faz parte do site do FACEBOOK, META ou META Inc. Além disso, este site NÃO é endossado pelo Facebook de forma alguma. FACEBOOK é uma marca comercial da META Inc.</p>
+                </div>
+                <div>
+                    <a href="#" class="back-to-top" style="display:flex;align-items:center;gap:5px;color:#fff;font-size:12px;font-weight:600;text-transform:uppercase"><i class="fas fa-arrow-up"></i> Ir para o topo</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // ===== LENIS SCROLL SUAVE =====
+        (function() {
+            const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+            function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+            requestAnimationFrame(raf);
+        })();
+        
+        // ===== SWIPER CARROSSEL =====
+        new Swiper('.swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            loop: true,
+            speed: 2000,
+            autoplay: { delay: 0, disableOnInteraction: false },
+            freeMode: true,
+            breakpoints: { 320: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 5 } }
+        });
+        
+        // ===== SCROLL ANIMATION =====
+        const animElements = document.querySelectorAll('.scroll-bottom, .scroll-left, .scroll-right, .scroll-top');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('ativado'); });
+        }, { threshold: 0.2 });
+        animElements.forEach(el => observer.observe(el));
+        
+        // ===== TWENTY TWENTY (comparador de imagens) =====
+        document.querySelectorAll('.twentytwenty-container').forEach(container => {
+            const before = container.querySelector('.twentytwenty-before');
+            const after = container.querySelector('.twentytwenty-after');
+            const handle = container.querySelector('.twentytwenty-handle');
+            let isDragging = false;
+            function setPosition(x) {
+                const rect = container.getBoundingClientRect();
+                let pos = Math.min(Math.max((x - rect.left) / rect.width, 0), 1);
+                before.style.clip = `rect(0, ${pos * rect.width}px, ${rect.height}px, 0)`;
+                handle.style.left = `${pos * rect.width}px`;
+            }
+            container.addEventListener('mousemove', (e) => { if(isDragging) setPosition(e.clientX); });
+            container.addEventListener('mousedown', () => isDragging = true);
+            window.addEventListener('mouseup', () => isDragging = false);
+            container.addEventListener('click', (e) => setPosition(e.clientX));
+            setPosition(container.getBoundingClientRect().width * 0.3);
+        });
+        
+        // ===== FAQ TOGGLE =====
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.closest('.faq-item');
+                const answer = item.querySelector('.faq-answer');
+                const icon = q.querySelector('i');
+                item.classList.toggle('active');
+                if(answer.style.display === 'block') answer.style.display = 'none';
+                else answer.style.display = 'block';
+                if(icon) icon.style.transform = item.classList.contains('active') ? 'rotate(90deg)' : '';
+            });
+        });
+        
+        // ===== SCROLL SUAVE LINKS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+        // ===== CURSOR PERSONALIZADO =====
+        if(window.innerWidth >= 600) {
+            const cursorInner = document.querySelector('.cursor-inner');
+            const cursorOuter = document.querySelector('.cursor-outer');
+            let mouseX = 0, mouseY = 0, innerX = 0, innerY = 0, outerX = 0, outerY = 0;
+            document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });
+            function animateCursor() {
+                innerX += (mouseX - innerX) * 0.25;
+                innerY += (mouseY - innerY) * 0.25;
+                outerX += (mouseX - outerX) * 0.15;
+                outerY += (mouseY - outerY) * 0.15;
+                cursorInner.style.transform = `translate(${innerX}px, ${innerY}px)`;
+                cursorOuter.style.transform = `translate(${outerX}px, ${outerY}px)`;
+                requestAnimationFrame(animateCursor);
+            }
+            animateCursor();
         }
         
-        function initPosition() {
-            const rect = container.getBoundingClientRect();
-            before.style.clip = `rect(0, ${offset * rect.width}px, ${rect.height}px, 0)`;
-            handle.style.left = `${offset * rect.width}px`;
-        }
-        
-        container.addEventListener('mousemove', (e) => { if(isDragging) setPosition(e.clientX); });
-        container.addEventListener('mousedown', () => isDragging = true);
-        window.addEventListener('mouseup', () => isDragging = false);
-        container.addEventListener('click', (e) => setPosition(e.clientX));
-        window.addEventListener('resize', initPosition);
-        initPosition();
-    });
-    
-    // ========== SWIPER CARROSSEL ==========
-    new Swiper('.carousel-swiper', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        loop: true,
-        speed: 2000,
-        autoplay: { delay: 0, disableOnInteraction: false },
-        freeMode: true,
-        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-        breakpoints: { 320: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 5 } }
-    });
-    
-    // ========== FAQ TOGGLE ==========
-    document.querySelectorAll('.faq-question').forEach(q => {
-        q.addEventListener('click', () => {
-            const item = q.closest('.faq-item');
-            item.classList.toggle('active');
+        // ===== HEADER SCROLL =====
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.elementor-sticky--active');
+            if(window.scrollY > 50) header.style.background = 'rgba(2,9,19,.95)';
+            else header.style.background = 'rgba(2,9,19,.8)';
         });
-    });
-    
-    // ========== SCROLL SUAVE ==========
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-    });
-    
-    // ========== CURSOR PERSONALIZADO ==========
-    const cursorDot = document.querySelector('.cursor-dot');
-    const cursorRing = document.querySelector('.cursor-ring');
-    if(window.innerWidth >= 1024) {
-        document.addEventListener('mousemove', (e) => {
-            cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-            cursorRing.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-        });
-    }
-    
-    // ========== HEADER SCROLL EFFECT ==========
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('.header');
-        if(window.scrollY > 50) header.style.background = 'rgba(2,9,19,.95)';
-        else header.style.background = 'rgba(2,9,19,.8)';
-    });
-</script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 </body>
 </html>
